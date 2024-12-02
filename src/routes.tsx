@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home } from "./components/Home";
-import { Work } from "./components/Work";
-import { NotFound } from "./components/NotFound";
+import { Home } from "./layouts/Home";
+import { Work } from "./layouts/Work";
+import { NotFound } from "./layouts/NotFound";
 
 
 export function PageRouter() {
