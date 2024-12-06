@@ -1,12 +1,12 @@
 import { PageRouter } from './routes';
-import { NavBar } from './components/NavBar';
+import { Header } from './components/Header';
 import './App.css';
 
 export default function App() {
   
   return (
     <div className='animatedBackground'>
-      <NavBar />
+      <Header />
       <PageRouter />
     </div>
   )

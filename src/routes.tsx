@@ -3,7 +3,6 @@ import { Home } from "./layouts/Home";
 import { Work } from "./layouts/Work";
 import { NotFound } from "./layouts/NotFound";
 
-
 export function PageRouter() {
     return (
         <Router>
