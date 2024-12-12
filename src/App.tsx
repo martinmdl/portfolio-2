@@ -5,9 +5,9 @@ import './App.css';
 export default function App() {
   
   return (
-    <div className='animatedBackground'>
-      <Header />
-      <PageRouter />
-    </div>
+    <>
+        <Header />
+        <PageRouter />
+    </>
   )
 }

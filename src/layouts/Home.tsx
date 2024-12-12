@@ -1,6 +1,5 @@
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-
 
 export function Home() {
 
@@ -12,11 +11,11 @@ export function Home() {
 
             <p>Welcome to the home page</p>
 
-            <Button variant="contained" onClick={() => navigate('/')}>home</Button>
+            <button onClick={() => navigate('/')}>home</button>
 
-            <Button variant="contained" onClick={() => navigate('/work')}>work</Button>
+            <button onClick={() => navigate('/work')}>work</button>
 
-            <Button variant="contained" onClick={() => navigate("/works")}>404</Button>
+            <button onClick={() => navigate("/works")}>404</button>
         </>
     )
 }
