@@ -1,12 +1,13 @@
 :root {
+
   /**** COLORS ****/
   --pri: #1F2667;
   --sec: #ffffffde;
-  --ter: #2E4959;
   --alt: #9ab9a6;
-  --bg: #0D1A26;
+  --bg1: #161d26;
+  --bg2: #333842;
 
-  /**** FONT ****/
+  /**** GENERIC FONT ****/
   font-family: Nunito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: var(--sec);
@@ -16,46 +17,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /**** BACKGROUND ****/
-  background-color: var(--bg);
-  background-image: radial-gradient(var(--ter) 1px, transparent 1px);
+  /**** BACKGROUND COLOR ****/
+  background-color: var(--bg1);
+
+  /**** BACKGROUND DOTS ****/
+  background-image: radial-gradient(var(--bg2) 1px, transparent 1px);
   background-size: 35px 35px;
 }
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  
-  background-image: linear-gradient(154.5deg, transparent 40%, var(--bg) 50%, transparent 60%);
-  background-size: 500%;
-  animation: bgBeams 20s ease infinite;
-  -webkit-animation: bgBeams 20s ease infinite;
-}
-
-@keyframes bgBeams {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
-@-webkit-keyframes bgBeams {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
 }
 

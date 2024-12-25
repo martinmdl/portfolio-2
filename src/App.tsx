@@ -1,8 +1,5 @@
-import { PageRouter } from './routes';
+import { PageRouter } from './PageRouter';
 import { Header } from './components/Header';
-import { About } from './components/About';
-import { Work } from './components/Work';
-import { Education } from './components/Education';
 import './App.css';
 
 export default function App() {
@@ -11,9 +8,6 @@ export default function App() {
     <>
       <Header />
       <PageRouter />
-      <About />
-      <Work />
-      <Education />
     </>
   )
 }
