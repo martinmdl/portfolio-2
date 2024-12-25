@@ -1,13 +1,14 @@
-import { Header } from './components/Header';
-import { PageRouter } from './PageRouter';
+import { Navbar } from './components/Navbar';
+import { Router } from './Router';
+
 import './App.css';
 
 export default function App() {
   
   return (
     <>
-      <Header />
-      <PageRouter />
+      <Navbar />
+      <Router />
     </>
   )
 }
