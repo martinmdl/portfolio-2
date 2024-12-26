@@ -6,7 +6,6 @@ export function Navbar() {
   // const isActive = useMatch(to);
 
   return (
-    <>
       <header className="header">
 
         <h1 className="title">
@@ -23,7 +22,5 @@ export function Navbar() {
         </nav>
 
       </header>
-
-    </>
   )
 }
