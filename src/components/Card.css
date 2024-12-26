@@ -1,3 +1,26 @@
+.card-container {
+    margin: 100px;
+    background-color: aqua;
+    width: 280px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* PARALLAX EFFECT CONTAINER */
+    transform-style: preserve-3d;
+}
+
+.inner-element {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    /* PARALLAX EFFECT ITEM */
+    transform: translateZ(60px);
+}
+
 .card {
     position: relative;
     width: 280px;
