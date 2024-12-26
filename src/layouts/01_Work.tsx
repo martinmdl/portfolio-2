@@ -8,7 +8,7 @@ export function Work() {
     return (
         <section className="page">
 
-            {cardsCount.map((card, index) =>
+            {cardsCount.map((index) =>
             <Card key={index} />)}
 
             {/* <Card /> */}
