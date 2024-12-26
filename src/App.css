@@ -1,33 +1,39 @@
 :root {
 
   /**** COLORS ****/
-  --pri: #1F2667;
-  --sec: #ffffffde;
+  --pri: #8d35ff;
+  --sec: #ffffffcb;
   --alt: #9ab9a6;
+  --active: #e0ff32;
   --bg1: #161d26;
   --bg2: #333842;
 
   /**** GENERIC FONT ****/
   font-family: Nunito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
   color: var(--sec);
   color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+  font-size: medium;
+  
   /**** BACKGROUND COLOR ****/
   background-color: var(--bg1);
-
+  
   /**** BACKGROUND DOTS ****/
   background-image: radial-gradient(var(--bg2) 1px, transparent 1px);
   background-size: 35px 35px;
 }
 
 * {
+  /**** BOX MODEL ****/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  /**** GENERIC TEXT ****/
+  text-decoration: none;
+  font-weight: normal;
 }
 
