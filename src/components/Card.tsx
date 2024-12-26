@@ -1,11 +1,11 @@
-import Tilt from 'react-parallax-tilt';
+// import Tilt from 'react-parallax-tilt';
 import './Card.css';
 
 export function Card() {
 
     return (
         <>
-            <Tilt
+            {/* <Tilt
                 className="card-container"
                 glareEnable={true}
                 glareMaxOpacity={0.9}
@@ -17,16 +17,16 @@ export function Card() {
 
                 <div className="inner-element"></div>
 
-            </Tilt>
+            </Tilt> */}
 
-            {/* <article className="card">
+            <article className="card">
                 <div className="card-content">
                     <h2>01</h2>
                     <h3>Card One</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eum provident autem expedita deserunt tempore a doloremque maiores. Laboriosam laborum fugit sunt minus asperiores veritatis expedita maiores esse eaque itaque!</p>
                     <a href="">Read More</a>
                 </div>
-            </article> */}
+            </article>
         </>
     )
 }

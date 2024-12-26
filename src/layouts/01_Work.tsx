@@ -1,12 +1,18 @@
 import { Card } from "../components/Card";
+import './Page.css';
 
 export function Work() {
 
-    return (
-        <>
-            <p>work</p>
-            <Card />
+    const cardsCount = [1, 2, 3];
 
-        </>
+    return (
+        <section className="page">
+
+            {cardsCount.map((card, index) =>
+            <Card key={index} />)}
+
+            {/* <Card /> */}
+
+        </section>
     )
 }

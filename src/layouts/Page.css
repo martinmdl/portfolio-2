@@ -1,0 +1,21 @@
+.page {
+    justify-self: center;
+    display: flex;    
+    flex-wrap: wrap;
+    height: calc(100vh - 60px);
+    width: 70vw;
+    /* background-color: darkslategrey; */
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+
+.carrousel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
