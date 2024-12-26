@@ -6,7 +6,7 @@ export function Card() {
     return (
         <>
             {/* <Tilt
-                className="card-container"
+                className="card-tilt"
                 glareEnable={true}
                 glareMaxOpacity={0.9}
                 glareColor="lightblue"
@@ -20,11 +20,10 @@ export function Card() {
             </Tilt> */}
 
             <article className="card">
-                <div className="card-content">
-                    <h2>01</h2>
-                    <h3>Card One</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eum provident autem expedita deserunt tempore a doloremque maiores. Laboriosam laborum fugit sunt minus asperiores veritatis expedita maiores esse eaque itaque!</p>
-                    <a href="">Read More</a>
+                <div className="card-image"></div>
+                <div className='card-text'>
+                    <h2>ReadApp</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eum provident. Hola comooo estas. Hola como estas: Bien y vos. Hola como estas. Hola como estas.</p>
                 </div>
             </article>
         </>
