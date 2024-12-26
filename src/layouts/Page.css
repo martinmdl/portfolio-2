@@ -4,9 +4,9 @@
     flex-wrap: wrap;
     height: calc(100vh - 60px);
     width: 70vw;
-    /* background-color: darkslategrey; */
     justify-content: space-between;
     align-content: space-evenly;
+    /* background-color: darkslategrey; */
 }
 
 .carrousel {

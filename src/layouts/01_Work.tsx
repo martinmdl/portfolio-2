@@ -3,16 +3,32 @@ import './Page.css';
 
 export function Work() {
 
-    const cardsCount = [1, 2, 3];
+    const cardsCount = [
+        {
+            title: "Amazon Scraper",
+            description: "API to list most used words in Amazon product descriptions",
+            image: "readappUser.png",
+        },
+        {
+            title: "Social Network",
+            description: "Platform to share and rate book reviews, connect readers, track your readings, etc.",
+            image: "readappUser.png",
+        },
+        {
+            title: "Social Network",
+            description: "App to share and rate book reviews, connect readers, track your readings, etc.",
+            image: "readappUser.png",
+        },
+    ];
 
     return (
-        <section className="page">
+        <main className="page">
 
-            {cardsCount.map((index) =>
-            <Card key={index} />)}
+            {cardsCount.map(item =>
+                <Card key={item.title} title={item.title} description={item.description} image={item.image} />)
+            }
 
-            {/* <Card /> */}
-
-        </section>
+        </main>
     )
 }
+
