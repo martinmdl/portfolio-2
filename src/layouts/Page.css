@@ -1,15 +1,26 @@
-.page {
+.main {
     justify-self: center;
-    display: flex;    
-    flex-wrap: wrap;
     height: calc(100vh - 60px);
     width: 70vw;
-    justify-content: space-between;
-    align-content: space-evenly;
-    /* background-color: darkslategrey; */
 }
 
-.carrousel {
+.upper-main {
+    height: 30%;
+    width: 100%;
+    background-color: blue;
+}
+
+.lower-main {
+    height: 70%;
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    /* background-color: brown; */
+}
+
+/* .carrousel {
     display: grid;
     grid-auto-flow: column;
     scroll-behavior: auto;
@@ -18,4 +29,4 @@
     overscroll-behavior: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
-}
+} */

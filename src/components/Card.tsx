@@ -7,16 +7,12 @@ export function Card({ title, description, image }: CardWorkProps) {
     return (
         <Tilt
             className="card-tilt"
-
             tiltMaxAngleX={6}
             tiltMaxAngleY={6}                
             tiltReverse={true}                
             scale={1.03}
-            transitionSpeed={5000}
-            
-            // element's proximity
+            transitionSpeed={5000}            
             perspective={3000}
-
             glareEnable={true}
             glareMaxOpacity={0.08}
             glareColor="var(--sec)"
