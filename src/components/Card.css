@@ -3,7 +3,7 @@
     width: 28%;
 
     /* PARALLAX EFFECT CONTAINER */
-    transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
 }
 
 .card {
@@ -20,6 +20,7 @@
     cursor: pointer;
     transition: 0.5s; /* Any property change will transition */
 
+    /* PARALLAX EFFECT ITEM */
     /* transform: translateZ(50px); */
 }
 
@@ -29,9 +30,6 @@
     /* background-image: url('readappUser.png'); */
     /* background-size: cover; */
     /* background-position: center top; */
-    
-    /* PARALLAX EFFECT ITEM */
-    /* transform: translateZ(50px); */
 }
 
 .card-image img {

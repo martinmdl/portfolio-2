@@ -9,23 +9,21 @@ export function Card() {
             <Tilt
                 className="card-tilt"
 
+                tiltMaxAngleX={6}
+                tiltMaxAngleY={6}                
+                tiltReverse={true}                
+                scale={1.03}
+                transitionSpeed={5000}
+                
+                // element's proximity
+                perspective={3000}
+
                 glareEnable={true}
-                glareMaxOpacity={0.5}
-                glareColor="var(--bg2)"
+                glareMaxOpacity={0.08}
+                glareColor="var(--sec)"
                 glarePosition="all"
                 glareBorderRadius="10px"
                 glareReverse={false}
-
-                tiltMaxAngleX={6}
-                tiltMaxAngleY={6}
-                
-                tiltReverse={true}
-
-                scale={1.03}
-                transitionSpeed={5000}
-
-                // Proximity with child item
-                perspective={3000}
             >
 
                 <article className="card">
