@@ -1,31 +1,45 @@
-// import Tilt from 'react-parallax-tilt';
+// https://www.npmjs.com/package/react-parallax-tilt?activeTab=readme
+import Tilt from 'react-parallax-tilt';
 import './Card.css';
 
 export function Card() {
 
     return (
         <>
-            {/* <Tilt
+            <Tilt
                 className="card-tilt"
+
                 glareEnable={true}
-                glareMaxOpacity={0.9}
-                glareColor="lightblue"
+                glareMaxOpacity={0.5}
+                glareColor="var(--bg2)"
                 glarePosition="all"
-            // glareBorderRadius="20px"
+                glareBorderRadius="10px"
+                glareReverse={false}
+
+                tiltMaxAngleX={6}
+                tiltMaxAngleY={6}
+                
+                tiltReverse={true}
+
+                scale={1.03}
+                transitionSpeed={5000}
+
+                // Proximity with child item
+                perspective={3000}
             >
 
+                <article className="card">
+                    <div className="card-image">
+                        <img src="readappUser.png" />
+                    </div>
+                    <div className='card-text'>
+                        <h2>Social Network</h2>
+                        <p>App to share and rate book reviews, connect readers, track your readings, etc.</p>
+                    </div>
+                </article>
 
-                <div className="inner-element"></div>
+            </Tilt>
 
-            </Tilt> */}
-
-            <article className="card">
-                <div className="card-image"></div>
-                <div className='card-text'>
-                    <h2>ReadApp</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eum provident. Hola comooo estas. Hola como estas: Bien y vos. Hola como estas. Hola como estas.</p>
-                </div>
-            </article>
         </>
     )
 }

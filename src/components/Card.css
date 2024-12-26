@@ -1,23 +1,9 @@
 .card-tilt {
-    background-color: aqua;
-    height: 400px;
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 50%;
+    width: 28%;
 
     /* PARALLAX EFFECT CONTAINER */
     transform-style: preserve-3d;
-}
-
-.inner-element {
-    height: 100px;
-    width: 100px;
-    background-color: red;
-
-    /* PARALLAX EFFECT ITEM */
-    transform: translateZ(60px);
 }
 
 .card {
@@ -25,28 +11,46 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: space-between;
-    height: 50%;
-    width: 28%;
+    height: 100%;
+    width: 100%;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
     border: 1px solid var(--bg2);
     border-radius: 10px;
     backdrop-filter: blur(1px);
     cursor: pointer;
     transition: 0.5s; /* Any property change will transition */
+
+    /* transform: translateZ(50px); */
 }
 
 .card-image {
     height: 80%;
     width: 100%;
+    /* background-image: url('readappUser.png'); */
+    /* background-size: cover; */
+    /* background-position: center top; */
+    
+    /* PARALLAX EFFECT ITEM */
+    /* transform: translateZ(50px); */
+}
+
+.card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-image: url('../assets/2.PNG');
-    background-size: cover;
-    background-position: center top;
+    border-bottom: 1px solid var(--bg2);
 }
 
 .card-text {
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
     color: var(--sec);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
