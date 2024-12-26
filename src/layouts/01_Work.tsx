@@ -6,7 +6,7 @@ export function Work() {
     const cardsCount = [
         {
             title: "Amazon Scraper",
-            description: "API to list most used words in Amazon product descriptions",
+            description: "API to list most used words in Amazon products description",
             image: "readappUser.png",
         },
         {
