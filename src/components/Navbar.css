@@ -47,8 +47,9 @@
 }
 
 .active {
-    color: var(--active);
+    color: white;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .navbar-button:hover {

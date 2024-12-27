@@ -10,10 +10,8 @@ export function Work() {
 
             <section className="upper-main">
 
-                <div className="container">
-                    <button></button>
-                    <div className="shadow"></div>
-                </div>
+                <div className="static"></div>
+                <div className="shadow"></div>
 
                 <h2>Open to work</h2>
                 <ul className="list">
