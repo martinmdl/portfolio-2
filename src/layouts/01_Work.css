@@ -1,15 +1,35 @@
-.static, .shadow {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    top: 25%;
-    left: 50%;
+.alert-title {
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-title h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+}
+
+.icon-static, .icon-shadow {
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
     background-color: var(--active);
     border: none;
 }
 
-.shadow {
+.icon-static {
+    position: relative;
+    left: 4px; /* half its size in px */
+}
+
+.icon-shadow {
+    position: relative;
+    left: -4px; /* half its size in px */
+}
+
+.icon-shadow {
     animation: pulse 1.5s infinite;
 }
 
@@ -25,3 +45,5 @@
         opacity: 0;
     }
 }
+
+

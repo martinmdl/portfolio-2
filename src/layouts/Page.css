@@ -1,5 +1,6 @@
 .main {
-    justify-self: center;
+    /* justify-self: center; */
+    margin: 0 auto;
     height: calc(100vh - 60px);
     width: 70vw;
 }
@@ -7,7 +8,7 @@
 .upper-main {
     height: 30%;
     width: 100%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .lower-main {

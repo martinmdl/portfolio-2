@@ -10,10 +10,12 @@ export function Work() {
 
             <section className="upper-main">
 
-                <div className="static"></div>
-                <div className="shadow"></div>
+                <article className="alert-title">
+                    <div className="icon-static"></div>
+                    <div className="icon-shadow"></div>
+                    <h2>Open to work</h2>
+                </article>
 
-                <h2>Open to work</h2>
                 <ul className="list">
                     <li className="list-item">Estudiante avanzado UNSAM</li>
                     <li className="list-item">Hybrid</li>
