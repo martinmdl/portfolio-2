@@ -12,11 +12,13 @@ export function Navbar() {
         </h1>
 
         <nav className="navbar">
-          <CustomLink to="/">Work</CustomLink>      
-          <CustomLink to="/edu">Education</CustomLink>
-          <CustomLink to="/about">About</CustomLink>
+          <CustomLink to="/work">Work</CustomLink>      
+          <CustomLink to="/education">Education</CustomLink>
           <CustomLink to="/resume">Resume</CustomLink>
-          <CustomLink to="/404">404</CustomLink>
+          <div className="navbar-controls">
+            <button className="navbar-light"></button>
+            <button className="navbar-lang"></button>
+          </div>
         </nav>
 
       </header>
