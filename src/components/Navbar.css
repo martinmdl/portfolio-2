@@ -66,14 +66,10 @@
     background-color: transparent;
 }
 
-.navbar-theme-light {
-    background-image: url(moon.svg);    
+.navbar-theme {
+    background-image: url(moon.svg);
     background-size: cover;
-}
-
-.navbar-theme-dark {
-    background-image: url(sun-dim.svg);    
-    background-size: cover;
+    /* filter: invert(1); */
 }
 
 /* .navbar-lang {

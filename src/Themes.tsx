@@ -1,5 +1,12 @@
 export function toggleTheme() {
+    
+    // Global theme toggle
     const isLightMode = document.body.classList.toggle("light-mode");
+
+    // Button theme toggle
+    // document.querySelector('.navbar-theme-light')?.classList.toggle("light-mode");
+
+    // Save the theme preference
     localStorage.setItem("theme", isLightMode ? "light" : "dark");
 }
 

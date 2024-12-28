@@ -1,4 +1,5 @@
 .card-tilt {
+    /* May be useful when going responsive*/
     /* height: calc((100vh - 60px) / 2); */
     /* width: 28%; */
     height: 446.5px;
@@ -29,6 +30,8 @@
 .card-image {
     height: 80%;
     width: 100%;
+
+    /* Just to remember properties*/
     /* background-image: url('readappUser.png'); */
     /* background-size: cover; */
     /* background-position: center top; */

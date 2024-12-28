@@ -17,7 +17,7 @@ export function Navbar() {
           <CustomLink to="/education">Education</CustomLink>
           <CustomLink to="/resume">Resume</CustomLink>
           <div className="navbar-controls">
-            <button className="navbar-theme-light" onClick={toggleTheme}></button>
+            <button className="navbar-theme" onClick={toggleTheme}></button>
             <button className="navbar-lang"></button>
           </div>
         </nav>
