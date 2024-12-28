@@ -1,4 +1,5 @@
 import { Link, useMatch } from "react-router-dom";
+import { toggleTheme } from "../Themes";
 import './Navbar.css';
 
 export function Navbar() {
@@ -16,7 +17,7 @@ export function Navbar() {
           <CustomLink to="/education">Education</CustomLink>
           <CustomLink to="/resume">Resume</CustomLink>
           <div className="navbar-controls">
-            <button className="navbar-light"></button>
+            <button className="navbar-theme-light" onClick={toggleTheme}></button>
             <button className="navbar-lang"></button>
           </div>
         </nav>

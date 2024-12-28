@@ -1,5 +1,18 @@
-:root {
+*, *::before, *::after {
+  
+  /**** BOX MODEL ****/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
+  /**** GENERIC TEXT ****/
+  text-decoration: none;
+  font-weight: normal;
+}
+
+body {
+  /* Default theme: Dark mode */
+  /* Toggle theme: Light mode */
   /**** COLORS ****/
   --pri: #8d35ff;
   --sec: #ffffffcb;
@@ -7,7 +20,7 @@
   --active: #e0ff32;
   --bg1: #161d26;
   --bg2: #333842;
-
+  
   /**** GENERIC FONT ****/
   font-family: Nunito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color: var(--sec);
@@ -26,15 +39,14 @@
   background-size: 35px 35px;
 }
 
-* {
-  
-  /**** BOX MODEL ****/
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 
-  /**** GENERIC TEXT ****/
-  text-decoration: none;
-  font-weight: normal;
+/* Default theme: Dark mode */
+/* Toggle theme: Light mode */
+.light-mode {
+  --pri: #8d35ff;
+  --sec: #000000cb;
+  --alt: #9ab9a6;
+  --active: #ff1161;
+  --bg1: #ccc7bd;
+  --bg2: #9c978a;
 }
-

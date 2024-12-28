@@ -62,11 +62,17 @@
     height: 1.5rem;
     width: 1.5rem;
     border: 0;
+    cursor: pointer;
     background-color: transparent;
 }
 
-.navbar-light {
+.navbar-theme-light {
     background-image: url(moon.svg);    
+    background-size: cover;
+}
+
+.navbar-theme-dark {
+    background-image: url(sun-dim.svg);    
     background-size: cover;
 }
 
