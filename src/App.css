@@ -37,6 +37,8 @@ body {
   /**** BACKGROUND DOTS ****/
   background-image: radial-gradient(var(--bg2) 1px, transparent 1px);
   background-size: 35px 35px;
+
+  transition: 0.3s;
 }
 
 
@@ -46,7 +48,7 @@ body {
   --pri: #8d35ff;
   --sec: #000000cb;
   --alt: #9ab9a6;
-  --active: #ff1161;
+  --active: #a30000;
   --bg1: #ccc7bd;
   --bg2: #9c978a;
 }

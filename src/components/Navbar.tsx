@@ -7,13 +7,12 @@ export function Navbar() {
 
   const [isLight, setIsLight] = useState(false);
 
+  const themeClass: string = isLight ? "icon-light" : "icon-dark";
+
   function handleThemeToggle() {
     toggleTheme();
     setIsLight(!isLight);
   }
-
-  // const themeClass = () => { return isLight ? "icon-light" : "icon-dark" }
-  const themeClass: string = isLight ? "icon-light" : "icon-dark";
  
   return (
       <header className="header">
@@ -29,7 +28,7 @@ export function Navbar() {
           <CustomLink to="/resume">Resume</CustomLink>
           <div className="navbar-controls">
             <button className={themeClass} onClick={handleThemeToggle}></button>
-            <button className="navbar-lang"></button>
+            <button className="icon-lang"></button>
           </div>
         </nav>
 

@@ -41,7 +41,7 @@
     height: 100%;
     width: 100%;
     color: var(--sec);
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .navbar-button-active {
@@ -63,21 +63,31 @@
     width: 1.5rem;
     border: 0;
     cursor: pointer;
+    border-radius: 20%;
     background-color: transparent;
-    transition: 0.5s;
+    transition: 0.3s;
+}
+
+.icon-dark, .icon-light, .icon-lang {
+    background-size: cover;
+    filter: opacity(0.8);
+}
+
+.icon-dark:hover, .icon-light:hover, .icon-lang:hover {
+    background-size: cover;
+    filter: brightness(1);
 }
 
 .icon-dark {
     background-image: url(moon.svg);
-    background-size: cover;
 }
 
 .icon-light {
     background-image: url(sun-dim.svg);
-    background-size: cover;
 }
 
-/* .navbar-lang {
+.icon-lang {
+    background-image: url(flags.png);
+}
 
-} */
 
