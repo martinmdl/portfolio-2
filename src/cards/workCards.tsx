@@ -2,7 +2,7 @@ export const cardsCount = [
     {
         title: "Amazon Trends",
         description: "API for consulting trending products in Amazon.",
-        image: "readappUser.png",
+        image: "webScraper.png",
     },
     {
         title: "Reading Network",
@@ -12,6 +12,6 @@ export const cardsCount = [
     {
         title: "Database Management",
         description: "App for administrating efficiently your local databases.",
-        image: "readappUser.png",
+        image: "fileManager.png",
     },
 ];

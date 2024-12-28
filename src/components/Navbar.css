@@ -46,8 +46,7 @@
 }
 
 .navbar-button-active {
-    color: white;
-    /* font-weight: bold; */
+    color: var(--active);
 }
 
 .navbar-button:hover, .navbar-button-active:hover {
