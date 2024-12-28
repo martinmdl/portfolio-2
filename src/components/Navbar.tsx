@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useMatch } from "react-router-dom";
 import './Navbar.css';
 
 export function Navbar() {
-
-  // const isActive = useMatch(to);
 
   return (
       <header className="header">
@@ -14,13 +12,29 @@ export function Navbar() {
         </h1>
 
         <nav className="navbar">
-          <Link to="/" className="navbar-button active">Work</Link>      
-          <Link to="/edu" className="navbar-button">Education</Link>
-          <Link to="/about" className="navbar-button">About</Link>
-          <Link to="/resume" className="navbar-button">Resume</Link>
-          <Link to="/404" className="navbar-button">404</Link>
+          <CustomLink to="/">Work</CustomLink>      
+          <CustomLink to="/edu">Education</CustomLink>
+          <CustomLink to="/about">About</CustomLink>
+          <CustomLink to="/resume">Resume</CustomLink>
+          <CustomLink to="/404">404</CustomLink>
         </nav>
 
       </header>
   )
 }
+
+function CustomLink({to, children}: CustomLinkProps) {
+
+  const isActive = useMatch(to);
+
+  return (
+    <Link to={to} className={isActive ? "navbar-button-active" : "navbar-button"}>
+      {children}
+    </Link>
+  )
+}
+
+type CustomLinkProps = {
+  to: string;
+  children: string;
+};
