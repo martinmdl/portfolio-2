@@ -16,7 +16,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: medium;
+  font-size: medium; /* medium = 16px */
   
   /**** BACKGROUND COLOR ****/
   background-color: var(--bg1);

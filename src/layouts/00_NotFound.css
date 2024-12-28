@@ -1,0 +1,35 @@
+.main-not-found {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    gap: 1rem;
+    background-color: var(--bg1);
+    color: var(--sec);
+}
+
+.main-not-found h1 {
+    font-size: 1.5rem;
+}
+
+.main-not-found button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--bg2);
+    cursor: pointer;
+}
+
+.main-not-found button:hover {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--sec);
+    color: var(--bg2);
+}
