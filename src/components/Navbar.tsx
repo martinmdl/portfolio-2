@@ -1,9 +1,20 @@
+import { useState } from "react";
 import { Link, useMatch } from "react-router-dom";
 import { toggleTheme } from "../Themes";
 import './Navbar.css';
 
 export function Navbar() {
 
+  const [isLight, setIsLight] = useState(false);
+
+  function handleThemeToggle() {
+    toggleTheme();
+    setIsLight(!isLight);
+  }
+
+  // const themeClass = () => { return isLight ? "icon-light" : "icon-dark" }
+  const themeClass: string = isLight ? "icon-light" : "icon-dark";
+ 
   return (
       <header className="header">
 
@@ -17,7 +28,7 @@ export function Navbar() {
           <CustomLink to="/education">Education</CustomLink>
           <CustomLink to="/resume">Resume</CustomLink>
           <div className="navbar-controls">
-            <button className="navbar-theme" onClick={toggleTheme}></button>
+            <button className={themeClass} onClick={handleThemeToggle}></button>
             <button className="navbar-lang"></button>
           </div>
         </nav>

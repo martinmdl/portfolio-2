@@ -64,12 +64,17 @@
     border: 0;
     cursor: pointer;
     background-color: transparent;
+    transition: 0.5s;
 }
 
-.navbar-theme {
+.icon-dark {
     background-image: url(moon.svg);
     background-size: cover;
-    /* filter: invert(1); */
+}
+
+.icon-light {
+    background-image: url(sun-dim.svg);
+    background-size: cover;
 }
 
 /* .navbar-lang {
