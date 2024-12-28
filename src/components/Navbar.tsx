@@ -8,7 +8,7 @@ export function Navbar() {
 
         <h1 className="title">
           Martín De Lojo
-          <p className="typewriter">| Backend Developer</p>          
+          <p className="typewriter">| Jr. Backend Developer</p>          
         </h1>
 
         <nav className="navbar">
