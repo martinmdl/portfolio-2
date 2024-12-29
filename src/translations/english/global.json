@@ -1,0 +1,16 @@
+{
+    "header": {
+    "name": "Martín De Lojo",
+    "title": "Jr. Backend Developer"
+    },
+    "navbar": {
+        "work": "Work",
+        "education": "Education",
+        "resume": "Resume"
+    },
+    "workCards": {
+        "amazon_desc": "API for consulting trending products in Amazon.",
+        "readapp_desc": "Platform for sharing book reviews, connecting readers, tracking your progress and more!",
+        "database_desc": "App for administrating efficiently your local databases."
+    }
+}

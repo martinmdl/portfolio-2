@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Link, useMatch } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { toggleTheme } from "../Themes";
 import './Navbar.css';
 
 export function Navbar() {
-
+  
+  const [text, i18n] = useTranslation("global");
+  const [isEnglish, setIsEnglish] = useState(true);
   const [isLight, setIsLight] = useState(false);
 
   const themeClass: string = isLight ? "icon-light" : "icon-dark";
@@ -12,6 +15,11 @@ export function Navbar() {
   function handleThemeToggle() {
     toggleTheme();
     setIsLight(!isLight);
+  }
+
+  function handleLanguageToggle(lang: string) {
+    i18n.changeLanguage(lang);
+    setIsEnglish(!isEnglish)
   }
  
   return (
@@ -23,12 +31,15 @@ export function Navbar() {
         </h1>
 
         <nav className="navbar">
-          <CustomLink to="/work">Work</CustomLink>      
-          <CustomLink to="/education">Education</CustomLink>
-          <CustomLink to="/resume">Resume</CustomLink>
+          <CustomLink to="/work">{text("navbar.work")}</CustomLink>      
+          <CustomLink to="/education">{text("navbar.education")}</CustomLink>
+          <CustomLink to="/resume">{text("navbar.resume")}</CustomLink>
           <div className="navbar-controls">
             <button className={themeClass} onClick={handleThemeToggle}></button>
-            <button className="icon-lang"></button>
+            {isEnglish ?
+              <button className="icon-lang lang-en" onClick={() => { handleLanguageToggle("es") }}></button>
+              : <button className="icon-lang lang-es" onClick={() => { handleLanguageToggle("en") }}></button>
+            }
           </div>
         </nav>
 

@@ -1,9 +1,12 @@
+// import { useTranslation } from "react-i18next";
 import { Card } from "../components/Card";
 import { cardsCount } from "../cards/workCards";
 import './Page.css';
 import './01_Work.css';
 
 export function Work() {
+
+    // const [text, i18n] = useTranslation("global");
 
     return (
         <main className="main">
@@ -27,8 +30,8 @@ export function Work() {
 
             <section className="lower-main">
 
-                {cardsCount.map( item =>
-                    <Card key={item.title} title={item.title} description={item.description} image={item.image} />
+                {cardsCount.map((item, index) =>
+                    <Card key={index} title={item.title} description={item.description} image={item.image} />
                 )}
 
             </section>

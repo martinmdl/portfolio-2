@@ -90,4 +90,11 @@
     background-image: url(flags.png);
 }
 
+.lang-en {
+    background-position: 100% 0;
+}
+
+.lang-es {
+    background-position: 0 0;
+}
 
