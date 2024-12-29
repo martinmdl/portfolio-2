@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { Link, useMatch } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { translator } from "../Translation";
 import { toggleTheme } from "../Themes";
 import './Navbar.css';
 
 export function Navbar() {
   
-  const [text, i18n] = useTranslation("global");
-  const [isEnglish, setIsEnglish] = useState(true);
   const [isLight, setIsLight] = useState(false);
+  const [isEn, setIsEn] = useState(true);
 
   const themeClass: string = isLight ? "icon-light" : "icon-dark";
 
@@ -17,9 +16,9 @@ export function Navbar() {
     setIsLight(!isLight);
   }
 
-  function handleLanguageToggle(lang: string) {
-    i18n.changeLanguage(lang);
-    setIsEnglish(!isEnglish)
+  function handleLanguageToggle() {
+    translator.toggleLanguage();
+    setIsEn(!isEn);
   }
  
   return (
@@ -31,15 +30,12 @@ export function Navbar() {
         </h1>
 
         <nav className="navbar">
-          <CustomLink to="/work">{text("navbar.work")}</CustomLink>      
-          <CustomLink to="/education">{text("navbar.education")}</CustomLink>
-          <CustomLink to="/resume">{text("navbar.resume")}</CustomLink>
+          <CustomLink to="/work">{translator.getText().translation.navbar.work}</CustomLink>      
+          <CustomLink to="/education">{translator.getText().translation.navbar.education}</CustomLink>
+          <CustomLink to="/resume">{translator.getText().translation.navbar.resume}</CustomLink>
           <div className="navbar-controls">
             <button className={themeClass} onClick={handleThemeToggle}></button>
-            {isEnglish ?
-              <button className="icon-lang lang-en" onClick={() => { handleLanguageToggle("es") }}></button>
-              : <button className="icon-lang lang-es" onClick={() => { handleLanguageToggle("en") }}></button>
-            }
+            <button className={`icon-lang ${translator.isEnglish ? "lang-en" : "lang-es"}`} onClick={() => { handleLanguageToggle() }}></button>
           </div>
         </nav>
 
