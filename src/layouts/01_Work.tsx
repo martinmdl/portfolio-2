@@ -1,18 +1,15 @@
-// import { useTranslation } from "react-i18next";
 import { Card } from "../components/Card";
-import { cardsCount } from "../cards/workCards";
+// import { cardsCount } from "../cards/workCards";
+import { getLanguage } from "../Translation";
 import './Page.css';
 import './01_Work.css';
 
 export function Work() {
 
-    // const [text, i18n] = useTranslation("global");
-
     return (
         <main className="main">
 
             <section className="upper-main">
-
                 <article className="alert-title">
                     <div className="icon-static"></div>
                     <div className="icon-shadow"></div>
@@ -30,14 +27,12 @@ export function Work() {
 
             <section className="lower-main">
 
-                {cardsCount.map((item, index) =>
+                {getLanguage().workCards.map((item, index) =>
                     <Card key={index} title={item.title} description={item.description} image={item.image} />
                 )}
 
             </section>
 
-
         </main>
     )
 }
-

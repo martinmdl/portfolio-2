@@ -1,20 +1,21 @@
+export function toggleLanguage() {
+    translator.isEnglish = !translator.isEnglish;
+    return translator.isEnglish;
+}
 
-export const translator = {
+export function getLanguage() {
+    if (translator.isEnglish) {
+        console.log("english")
+        return translator.englishText;
+    } else {
+        console.log("spanish")
+        return translator.spanishText;
+    }
+}
+
+const translator = {
 
     isEnglish: true,
-
-    toggleLanguage: () => {
-        translator.isEnglish = !translator.isEnglish;
-        return translator.isEnglish;
-    },
-
-    getText: () => {
-        return translator.isEnglish ? {
-            translation: translator.englishText,
-        } : {
-            translation: translator.spanishText,
-        }
-    },
 
     englishText: {
         navbar: {
