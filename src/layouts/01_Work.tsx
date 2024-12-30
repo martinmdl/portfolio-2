@@ -1,7 +1,8 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { LangContext, LangContextType } from "../contexts/LangContext";
 import { getLanguage } from "../Translation";
 import { Card } from "../components/Card";
+import { Modal } from "../components/Modal";
 import './Page.css';
 import './01_Work.css';
 
@@ -9,8 +10,13 @@ export function Work() {
 
     const { isSpanish } = useContext<LangContextType | null>(LangContext)!;
 
-
     const currentLanguage = getLanguage(isSpanish);
+
+    const [activeModal, setActiveModal] = useState(false);
+
+    function handleModal() {
+        setActiveModal(!activeModal)
+    }
 
 
     return (
@@ -35,8 +41,12 @@ export function Work() {
             <section className="lower-main">
 
                 {currentLanguage.workCards.map((item, index) =>
-                    <Card key={index} title={item.title} description={item.description} image={item.image} />
+                    <button className="card-button" onClick={handleModal}>
+                        <Card key={index} title={item.title} description={item.description} image={item.image} />
+                    </button>
                 )}
+
+                {activeModal && <Modal />}
 
             </section>
 
