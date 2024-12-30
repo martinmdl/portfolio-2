@@ -1,3 +1,5 @@
+// import { useContext } from "react";
+// import { Context } from "../context/Context";
 import { getLanguage } from "../Translation";
 import { Card } from "../components/Card";
 import './Page.css';
