@@ -1,13 +1,17 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, useMatch } from "react-router-dom";
-import { toggleLanguage, getLanguage, isSpanishMode } from "../Translation";
+import { LangContext, LangContextType } from "../context/LangContext";
+import { getLanguage } from "../Translation";
 import { toggleTheme, isLightMode } from "../Theme";
 import './Navbar.css';
 
 export function Navbar() {
+
+  const { isSpanish, toggleLang } = useContext<LangContextType | null>(LangContext)!;
+
+  const currentLanguage = getLanguage(isSpanish);
   
   const [isLight, setIsLight] = useState(isLightMode());
-  const [isSpanish, setIsSpanish] = useState(isSpanishMode());
   
   const themeClass: string = isLight ? "icon-light" : "icon-dark";
 
@@ -18,7 +22,7 @@ export function Navbar() {
   }
 
   function handleLanguageToggle() {
-    setIsSpanish(toggleLanguage());
+    toggleLang();
   }
 
   return (
@@ -31,9 +35,9 @@ export function Navbar() {
 
       <nav className="navbar">
         
-        <CustomLink to="/work">{getLanguage().navbar.work}</CustomLink>      
-        <CustomLink to="/education">{getLanguage().navbar.education}</CustomLink>
-        <CustomLink to="/resume">{getLanguage().navbar.resume}</CustomLink>
+        <CustomLink to="/work">{currentLanguage.navbar.work}</CustomLink>      
+        <CustomLink to="/education">{currentLanguage.navbar.education}</CustomLink>
+        <CustomLink to="/resume">{currentLanguage.navbar.resume}</CustomLink>
 
         <div className="navbar-controls">
           <button className={themeClass} onClick={handleThemeToggle}></button>

@@ -1,26 +1,18 @@
 import { ReactNode, useState } from "react";
 import { LangContext } from "./LangContext";
-import { getLanguage, toggleLanguage } from "../Translation";
+import { isSpanishMode, toggleLanguage } from "../Translation";
 
 export const LangProvider = ({ children } : {children: ReactNode} ) => {
 
-    const [language, setLanguage] = useState({})
+    const [isSpanish, setIsSpanish] = useState(isSpanishMode());
 
     const value = {
 
-        language,
+        isSpanish,
 
         toggleLang: () => {
-            setLanguage(toggleLanguage());
+            setIsSpanish(toggleLanguage());
         },
-
-        getLang: () => {
-            setLanguage(getLanguage());
-        },
-
-        // getLang: () => {
-        //     setLanguage(localStorage.getItem("language")!);
-        // },
     }
 
     return (

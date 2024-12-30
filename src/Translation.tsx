@@ -14,8 +14,8 @@ export function isSpanishMode() {
     return localStorage.getItem(LANG_KEY) === LANG_VALUE;
 }
 
-export function getLanguage() {
-    if (isSpanishMode()) {
+export function getLanguage(isSpanish: boolean) {
+    if (isSpanish) {
         return translator.spanishText;
     } else {
         return translator.englishText;

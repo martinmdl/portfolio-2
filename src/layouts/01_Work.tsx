@@ -1,11 +1,17 @@
-// import { useContext } from "react";
-// import { Context } from "../context/Context";
+import { useContext } from "react";
+import { LangContext, LangContextType } from "../context/LangContext";
 import { getLanguage } from "../Translation";
 import { Card } from "../components/Card";
 import './Page.css';
 import './01_Work.css';
 
 export function Work() {
+
+    const { isSpanish } = useContext<LangContextType | null>(LangContext)!;
+
+
+    const currentLanguage = getLanguage(isSpanish);
+
 
     return (
         <main className="main">
@@ -28,7 +34,7 @@ export function Work() {
 
             <section className="lower-main">
 
-                {getLanguage().workCards.map((item, index) =>
+                {currentLanguage.workCards.map((item, index) =>
                     <Card key={index} title={item.title} description={item.description} image={item.image} />
                 )}
 
