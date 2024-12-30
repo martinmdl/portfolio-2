@@ -10,11 +10,10 @@ export function toggleTheme() {
     return isLight;
 }
 
-export function consultTheme() {
+export function isLightMode() {
     return localStorage.getItem(LIGHT_KEY) === LIGHT_VALUE;
 }
 
-// Apply the theme on initial load
-if (consultTheme()) {
+if (isLightMode()) {
     document.body.classList.add(LIGHT_VALUE);
 }

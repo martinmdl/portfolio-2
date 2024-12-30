@@ -1,6 +1,5 @@
-import { Card } from "../components/Card";
-// import { cardsCount } from "../cards/workCards";
 import { getLanguage } from "../Translation";
+import { Card } from "../components/Card";
 import './Page.css';
 import './01_Work.css';
 

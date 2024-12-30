@@ -1,24 +1,24 @@
 import { useState } from "react";
 import { Link, useMatch } from "react-router-dom";
-import { toggleLanguage, getLanguage } from "../Translation";
-import { toggleTheme, consultTheme } from "../Theme";
+import { toggleLanguage, getLanguage, isSpanishMode } from "../Translation";
+import { toggleTheme, isLightMode } from "../Theme";
 import './Navbar.css';
 
 export function Navbar() {
   
-  const [isLight, setIsLight] = useState(consultTheme());
-  const [isEnglish, setIsEnglish] = useState(true);
-
+  const [isLight, setIsLight] = useState(isLightMode());
+  const [isSpanish, setIsSpanish] = useState(isSpanishMode());
+  
   const themeClass: string = isLight ? "icon-light" : "icon-dark";
-  const langClass: string = `icon-lang ${isEnglish ? "lang-en" : "lang-es"}`
 
+  const langClass: string = `icon-lang ${isSpanish ? "lang-spanish" : "lang-english"}`;
 
   function handleThemeToggle() {
     setIsLight(toggleTheme());
   }
 
   function handleLanguageToggle() {
-    setIsEnglish(toggleLanguage());
+    setIsSpanish(toggleLanguage());
   }
 
   return (

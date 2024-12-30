@@ -1,21 +1,28 @@
+const LANG_KEY = "language";
+const LANG_VALUE = "spanish";
+
+let isSpanish: boolean;
+isSpanish = isSpanishMode();
+
 export function toggleLanguage() {
-    translator.isEnglish = !translator.isEnglish;
-    return translator.isEnglish;
+    isSpanish = !isSpanish;
+    localStorage.setItem(LANG_KEY, isSpanish ? LANG_VALUE : "");
+    return isSpanish;
+}
+
+export function isSpanishMode() {
+    return localStorage.getItem(LANG_KEY) === LANG_VALUE;
 }
 
 export function getLanguage() {
-    if (translator.isEnglish) {
-        console.log("english")
-        return translator.englishText;
-    } else {
-        console.log("spanish")
+    if (isSpanishMode()) {
         return translator.spanishText;
+    } else {
+        return translator.englishText;
     }
 }
 
 const translator = {
-
-    isEnglish: true,
 
     englishText: {
         navbar: {
