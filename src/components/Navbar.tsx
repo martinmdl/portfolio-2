@@ -1,24 +1,24 @@
 import { useState } from "react";
 import { Link, useMatch } from "react-router-dom";
 import { translator } from "../Translation";
-import { toggleTheme } from "../Themes";
+import { toggleTheme, consultTheme } from "../Theme";
 import './Navbar.css';
 
 export function Navbar() {
   
-  const [isLight, setIsLight] = useState(false);
-  const [isEn, setIsEn] = useState(true);
+  const [isLight, setIsLight] = useState(consultTheme());
+  const [isEng, setIsEng] = useState(true);
 
   const themeClass: string = isLight ? "icon-light" : "icon-dark";
+  const langClass: string = `icon-lang ${isEng ? "lang-en" : "lang-es"}`
+
 
   function handleThemeToggle() {
-    toggleTheme();
-    setIsLight(!isLight);
+    setIsLight(toggleTheme());
   }
 
   function handleLanguageToggle() {
-    translator.toggleLanguage();
-    setIsEn(!isEn);
+    setIsEng(translator.toggleLanguage());
   }
  
   return (
@@ -35,7 +35,7 @@ export function Navbar() {
           <CustomLink to="/resume">{translator.getText().translation.navbar.resume}</CustomLink>
           <div className="navbar-controls">
             <button className={themeClass} onClick={handleThemeToggle}></button>
-            <button className={`icon-lang ${translator.isEnglish ? "lang-en" : "lang-es"}`} onClick={() => { handleLanguageToggle() }}></button>
+            <button className={langClass} onClick={handleLanguageToggle}></button>
           </div>
         </nav>
 

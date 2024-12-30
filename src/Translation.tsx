@@ -5,6 +5,7 @@ export const translator = {
 
     toggleLanguage: () => {
         translator.isEnglish = !translator.isEnglish;
+        return translator.isEnglish;
     },
 
     getText: () => {
