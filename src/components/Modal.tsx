@@ -1,6 +1,9 @@
+import './Modal.css'
 
 export function Modal() {
   return (
-    <div>Modal</div>
+    <section className="modal">
+        <article className="article">s</article>
+    </section>
   )
 }

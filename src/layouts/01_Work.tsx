@@ -14,7 +14,7 @@ export function Work() {
 
     const [activeModal, setActiveModal] = useState(false);
 
-    function handleModal() {
+    function handleModalToggle() {
         setActiveModal(!activeModal)
     }
 
@@ -40,13 +40,14 @@ export function Work() {
 
             <section className="lower-main">
 
+                {activeModal && <Modal />}
+
                 {currentLanguage.workCards.map((item, index) =>
-                    <button className="card-button" onClick={handleModal}>
+                    <button className="card-button" onClick={handleModalToggle}>
                         <Card key={index} title={item.title} description={item.description} image={item.image} />
                     </button>
                 )}
 
-                {activeModal && <Modal />}
 
             </section>
 
