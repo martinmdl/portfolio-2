@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LangContext, LangContextType } from "../context/LangContext";
+import { LangContext, LangContextType } from "../contexts/LangContext";
 import { getLanguage } from "../Translation";
 import { Card } from "../components/Card";
 import './Page.css';

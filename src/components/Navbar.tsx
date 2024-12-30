@@ -1,25 +1,27 @@
 import { useContext, useState } from "react";
 import { Link, useMatch } from "react-router-dom";
-import { LangContext, LangContextType } from "../context/LangContext";
+import { LangContext, LangContextType } from "../contexts/LangContext";
 import { getLanguage } from "../Translation";
 import { toggleTheme, isLightMode } from "../Theme";
 import './Navbar.css';
 
 export function Navbar() {
 
-  const { isSpanish, toggleLang } = useContext<LangContextType | null>(LangContext)!;
-
-  const currentLanguage = getLanguage(isSpanish);
-  
-  const [isLight, setIsLight] = useState(isLightMode());
+  /**** COLOR SCHEME ****/
+  const [isLight, setIsLight] = useState(isLightMode());  
   
   const themeClass: string = isLight ? "icon-light" : "icon-dark";
-
-  const langClass: string = `icon-lang ${isSpanish ? "lang-spanish" : "lang-english"}`;
-
+  
   function handleThemeToggle() {
     setIsLight(toggleTheme());
   }
+  
+  /**** TOGGLE LANGUAGE ****/
+  const { isSpanish, toggleLang } = useContext<LangContextType | null>(LangContext)!;
+  
+  const currentLanguage = getLanguage(isSpanish);
+  
+  const langClass: string = `icon-lang ${isSpanish ? "lang-spanish" : "lang-english"}`;
 
   function handleLanguageToggle() {
     toggleLang();
