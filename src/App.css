@@ -51,6 +51,7 @@ body {
   --sec: #000000cb;
   --alt: #9ab9a6;
   --active: #a30000;
-  --bg1: #ccc7bd;
+  /* --bg1: #ccc7bd; */
+  --bg1: #cccccc;
   --bg2: #9c978a;
 }
