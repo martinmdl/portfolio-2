@@ -79,15 +79,15 @@
 }
 
 .icon-dark {
-    background-image: url("moon.svg");
+    background-image: url("/moon.svg");
 }
 
 .icon-light {
-    background-image: url("sun-dim.svg");
+    background-image: url("/sun-dim.svg");
 }
 
 .icon-lang {
-    background-image: url("flags.png");
+    background-image: url("/flags.png");
 }
 
 .lang-english {
