@@ -8,7 +8,6 @@
 .alert-title h2 {
     font-size: 1rem;
     font-weight: bold;
-    /* text-transform: uppercase; */
 }
 
 .icon-static, .icon-shadow {
@@ -44,6 +43,16 @@
         transform: scale(1.5);
         opacity: 0;
     }
+}
+
+.info-frame {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--bg2);
+    border-radius: 0.6rem;
+    backdrop-filter: blur(1px);
 }
 
 .card-button {

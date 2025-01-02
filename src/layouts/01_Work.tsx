@@ -22,34 +22,33 @@ export function Work() {
     return (
         <main className="main">
 
-            <section className="upper-main">
-                <article className="alert-title">
-                    <div className="icon-static"></div>
-                    <div className="icon-shadow"></div>
-                    <h2>Open to work</h2>
-                </article>
+                <section className="info-frame">
 
-                <ul className="list">
-                    <li className="list-item">Estudiante avanzado UNSAM</li>
-                    <li className="list-item">Hybrid</li>
-                    <li className="list-item">martinmdl42@gmail.com</li>
-                    <li className="list-item">Español nativo, ingles avanzado</li>
-                </ul>
-                
-            </section>
+                    <article className="alert-title">
+                        <div className="icon-static"></div>
+                        <div className="icon-shadow"></div>
+                        <h2>Open to work</h2>
+                    </article>
 
-            <section className="lower-main">
+                    <span>Estudiante avanzado UNSAM</span><br/>
+                    <span>Hybrid</span><br/>
+                    <span>martinmdl42@gmail.com</span><br/>
+                    <span>Español nativo, ingles avanzado</span>
 
-                {activeModal && <Modal />}
+                </section>
 
-                {currentLanguage.workCards.map(item =>
-                    <button className="card-button" onClick={handleModalToggle}>
-                        <Card key={item.id} title={item.title} description={item.description} image={item.image} />
-                    </button>
-                )}
+                <section className="lower-main">
 
+                    {activeModal && <Modal onClose={handleModalToggle} />}
 
-            </section>
+                    {currentLanguage.workCards.map(item =>
+                        <button className="card-button" onClick={handleModalToggle}>
+                            <Card key={item.id} title={item.title} description={item.description} image={item.image} />
+                        </button>
+                    )}
+
+                </section>
+
 
         </main>
     )

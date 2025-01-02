@@ -1,24 +1,20 @@
 .main {
-    margin: 0 auto;
     height: calc(100vh - 60px);
     width: 70vw;
-    /* background-color: red; */
-}
-
-.upper-main {
-    height: 30%;
-    width: 100%;
-    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    /* background-color: #a0a0ff; */
 }
 
 .lower-main {
-    height: 70%;
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    align-content: center;
-    /* background-color: brown; */
+    /* background-color: #ffa0e2; */
 }
 
 /* .carrousel {
