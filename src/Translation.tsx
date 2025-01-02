@@ -50,7 +50,11 @@ const translator = {
                 description: "App for administrating efficiently your local databases.",
                 image: fileManager,
             },
-        ]
+        ],
+        notFound: {
+            title: "Error 404: Page not found",
+            button: "Return to the site",
+        }
     },
     
     spanishText: {
@@ -75,6 +79,10 @@ const translator = {
                 description: "App para administrar eficientemente bases de datos locales.",
                 image: fileManager,
             },
-        ]
+        ],
+        notFound: {
+            title: "Error 404: Página no encontrada",
+            button: "Regresar al sitio",
+        }
     },
 }
