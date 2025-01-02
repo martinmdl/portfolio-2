@@ -1,9 +1,22 @@
-import './Modal.css'
+import { useState } from 'react';
+import './Modal.css';
 
 export function Modal() {
+
+  const [isActive, setIsActive] = useState(true);
+
+  function closeModal() {
+    setIsActive(!isActive);
+  }
+  
   return (
-    <section className="modal">
-        <article className="article">s</article>
-    </section>
+    <>
+      {isActive && (
+        <aside className="modal">
+            <section className="close-space" onClick={closeModal}></section>
+            <section className="content">s</section>
+        </aside>
+      )}
+    </>
   )
 }
