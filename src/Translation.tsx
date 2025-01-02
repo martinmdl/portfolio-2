@@ -36,16 +36,19 @@ const translator = {
         },
         workCards: [
             {
+                id: 1,
                 title: "Amazon Trends",
                 description: "API for analizing trending products in Amazon.",
                 image: webScraper,
             },
             {
+                id: 2,
                 title: "Reading Network",
                 description: "Platform for sharing book reviews, connecting readers, tracking your progress and more!",
                 image: readappUser,
             },
             {
+                id: 3,
                 title: "Database Management",
                 description: "App for administrating efficiently your local databases.",
                 image: fileManager,
@@ -65,16 +68,19 @@ const translator = {
         },
         workCards: [
             {
+                id: 1,
                 title: "Tendencias de Amazon",
                 description: "API para analizar tendencias en productos de Amazon.",
                 image: webScraper,
             },
             {
+                id: 2,
                 title: "Red de Lectura",
                 description: "Platforma para compartir reseñas, conectar lectores, registrar tu progreso y mucho más!",
                 image: readappUser,
             },
             {
+                id: 3,
                 title: "Gestión de Bases de Datos",
                 description: "App para administrar eficientemente bases de datos locales.",
                 image: fileManager,

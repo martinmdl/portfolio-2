@@ -42,9 +42,9 @@ export function Work() {
 
                 {activeModal && <Modal />}
 
-                {currentLanguage.workCards.map((item, index) =>
+                {currentLanguage.workCards.map(item =>
                     <button className="card-button" onClick={handleModalToggle}>
-                        <Card key={index} title={item.title} description={item.description} image={item.image} />
+                        <Card key={item.id} title={item.title} description={item.description} image={item.image} />
                     </button>
                 )}
 
