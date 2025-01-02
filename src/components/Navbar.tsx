@@ -7,6 +7,8 @@ import './Navbar.css';
 
 export function Navbar() {
 
+  const cvSpanish = 'https://drive.google.com/file/d/1BFBy4yKEc4EgnBwv297LLPY5DMl0NpBt/view';
+
   /**** COLOR SCHEME ****/
   const [isLight, setIsLight] = useState(isLightMode());  
   
@@ -39,7 +41,7 @@ export function Navbar() {
         
         <CustomLink to="/work">{currentLanguage.navbar.work}</CustomLink>      
         <CustomLink to="/education">{currentLanguage.navbar.education}</CustomLink>
-        <CustomLink to="/resume">{currentLanguage.navbar.resume}</CustomLink>
+        <a className="navbar-button" href={cvSpanish} target="_blank" rel="noopener noreferrer">{currentLanguage.navbar.resume}</a>
 
         <div className="navbar-controls">
           <button className={themeClass} onClick={handleThemeToggle}></button>
