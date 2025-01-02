@@ -23,7 +23,7 @@ export function Card({ title, description, image }: CardWorkProps) {
 
             <section className="card">
                 <article className="card-image">
-                    <img src={image} />
+                    <img src={image} alt="card-image" />
                 </article>
                 <article className='card-text'>
                     <h2>{title}</h2>
