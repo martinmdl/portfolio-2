@@ -40,7 +40,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    color: var(--sec);
+    color: var(--text);
     transition: 0.3s;
 }
 
@@ -74,8 +74,7 @@
 }
 
 .icon-dark:hover, .icon-light:hover, .icon-lang:hover {
-    background-size: cover;
-    filter: brightness(1);
+    filter: opacity(1) brightness(1);
 }
 
 .icon-dark {

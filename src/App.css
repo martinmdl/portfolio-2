@@ -11,19 +11,16 @@
 }
 
 body {
-  /* Default theme: Dark mode */
-  /* Toggle theme: Light mode */
   /**** COLORS ****/
-  --pri: #8d35ff;
-  --sec: #ffffffcb;
-  --alt: #9ab9a6;
+  --textHover: #ffffff;
+  --text: #ffffffcb;
   --active: #e0ff32;
   --bg1: #161d26;
   --bg2: #333842;
   
   /**** GENERIC FONT ****/
   font-family: Nunito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: var(--sec);
+  color: var(--text);
   
   /* color-scheme: light dark;
   font-synthesis: none;
@@ -43,15 +40,10 @@ body {
   transition: 0.3s;
 }
 
-
-/* Default theme: Dark mode */
-/* Toggle theme: Light mode */
 .light-mode {
-  --pri: #8d35ff;
-  --sec: #000000cb;
-  --alt: #9ab9a6;
+  --textHover: #000000;
+  --text: #000000cb;
   --active: #a30000;
-  /* --bg1: #ccc7bd; */
-  --bg1: #cccccc;
+  --bg1: #ccc7bd;
   --bg2: #9c978a;
 }

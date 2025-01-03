@@ -23,13 +23,13 @@
     border: none;
     cursor: pointer;
     background-color: var(--bg2);
-    color: var(--sec);
+    color: var(--text);
 }
 
 .main-not-found button:hover {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.2rem;
-    background-color: var(--sec);
+    background-color: var(--text);
     color: var(--bg1);
 }

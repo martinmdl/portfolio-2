@@ -15,7 +15,7 @@ export function Card({ title, description, image }: CardWorkProps) {
             perspective={3000}
             glareEnable={true}
             glareMaxOpacity={0.08}
-            glareColor="var(--sec)"
+            glareColor="var(--text)"
             glarePosition="all"
             glareBorderRadius="10px"
             glareReverse={false}
