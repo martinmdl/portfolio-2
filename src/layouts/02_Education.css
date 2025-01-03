@@ -1,0 +1,44 @@
+.alert-title {
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-title h2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.icon-static, .icon-shadow {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--active);
+    border: none;
+}
+
+.icon-static {
+    position: relative;
+    left: 4px; /* half its size in px */
+}
+
+.icon-shadow {
+    position: relative;
+    left: -4px; /* half its size in px */
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+

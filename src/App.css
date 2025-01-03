@@ -20,6 +20,7 @@ body {
   
   /**** GENERIC FONT ****/
   font-family: Nunito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: medium; /* medium = 16px */
   color: var(--text);
   
   /* color-scheme: light dark;
@@ -28,7 +29,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   
-  font-size: medium; /* medium = 16px */
   
   /**** BACKGROUND COLOR ****/
   background-color: var(--bg1);
