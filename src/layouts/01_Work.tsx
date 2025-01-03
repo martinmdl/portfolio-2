@@ -18,11 +18,12 @@ export function Work() {
         setActiveModal(!activeModal)
     }
 
-
     return (
         <main className="main">
 
-                <section className="info-frame">
+            <section className="upper-main">
+                
+                <section className="text-frame">
 
                     <article className="alert-title">
                         <div className="icon-static"></div>
@@ -37,7 +38,13 @@ export function Work() {
 
                 </section>
 
-                <section className="lower-main">
+            </section>
+
+            <section className="lower-main">
+
+                <button className="arrow">{"<"}</button>
+
+                <section className="cards-frame">
 
                     {activeModal && <Modal onClose={handleModalToggle} />}
 
@@ -49,6 +56,9 @@ export function Work() {
 
                 </section>
 
+                <button className="arrow">{">"}</button>
+
+            </section>
 
         </main>
     )
