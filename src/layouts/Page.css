@@ -23,7 +23,6 @@
     border: 1px solid var(--bg2);
     border-radius: 0.6rem;
     backdrop-filter: blur(1px);
-    /* background-color: #518181; */
 }
 
 .lower-main {

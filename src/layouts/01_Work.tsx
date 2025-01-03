@@ -27,7 +27,7 @@ export function Work() {
                     <article className="alert-title">
                         <div className="icon-static"></div>
                         <div className="icon-shadow"></div>
-                        <h2>Open to work</h2>
+                        <h2 className="alert-text">Open to work</h2>
                     </article>
 
                     <span>Estudiante avanzado UNSAM</span><br/>
