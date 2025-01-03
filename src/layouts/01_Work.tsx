@@ -21,8 +21,7 @@ export function Work() {
     return (
         <main className="main">
 
-            <section className="upper-main">
-                
+            <section className="upper-main">                
                 <section className="text-frame">
 
                     <article className="alert-title">
@@ -37,27 +36,30 @@ export function Work() {
                     <span>Español nativo, ingles avanzado</span>
 
                 </section>
-
             </section>
 
             <section className="lower-main">
+                <section className="projects-frame">
+                    <section className="arrows-frame">
 
-                <button className="arrow">{"<"}</button>
+                        <button className="arrow">{"<"}</button>
 
-                <section className="cards-frame">
+                        <section className="cards-frame">
 
-                    {activeModal && <Modal onClose={handleModalToggle} />}
+                            {activeModal && <Modal onClose={handleModalToggle} />}
 
-                    {currentLanguage.workCards.map(item =>
-                        <button className="card-button" onClick={handleModalToggle}>
-                            <Card key={item.id} title={item.title} description={item.description} image={item.image} />
-                        </button>
-                    )}
+                            {currentLanguage.workCards.map(item =>
+                                <button className="card-button" onClick={handleModalToggle}>
+                                    <Card key={item.id} title={item.title} description={item.description} image={item.image} />
+                                </button>
+                            )}
 
+                        </section>
+
+                        <button className="arrow">{">"}</button>
+
+                    </section>
                 </section>
-
-                <button className="arrow">{">"}</button>
-
             </section>
 
         </main>

@@ -7,21 +7,12 @@
 }
 
 .upper-main {
-    height: 30%;
+    height: 40%;
     width: 70vw;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background-color: #788151; */
-}
-
-.lower-main {
-    height: 70%;
-    width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: #518163; */
 }
 
 .text-frame {
@@ -33,6 +24,25 @@
     border-radius: 0.6rem;
     backdrop-filter: blur(1px);
     /* background-color: #518181; */
+}
+
+.lower-main {
+    height: 60%;
+    width: 80vw;
+    display: flex;
+    align-items: flex-start;
+    /* background-color: #518163; */
+}
+
+.projects-frame {
+    width: 100%;
+}
+
+.arrows-frame {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* background-color: blue; */
 }
 
 .cards-frame {
