@@ -7,7 +7,7 @@
 }
 
 .upper-main {
-    height: 40%;
+    height: 30%;
     width: 70vw;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@
 }
 
 .lower-main {
-    height: 60%;
+    height: 70%;
     width: 80vw;
     display: flex;
     justify-content: space-between;
