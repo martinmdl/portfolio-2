@@ -9,7 +9,7 @@ export function Navbar() {
 
   const cvSpanish = 'https://drive.google.com/file/d/1BFBy4yKEc4EgnBwv297LLPY5DMl0NpBt/view';
 
-  /**** COLOR SCHEME ****/
+  /**** TOGGLE COLOR SCHEME ****/
   const [isLight, setIsLight] = useState(isLightMode());  
   
   const themeClass: string = isLight ? "icon-light" : "icon-dark";

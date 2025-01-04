@@ -5,42 +5,55 @@ import { Card } from "../components/Card";
 import { Modal } from "../components/Modal";
 import './Page.css';
 import './01_Work.css';
+import frontPic from '../assets/frontPic.jpg'
 
 export function Work() {
 
+    /**** LANGUAGE ****/
     const { isSpanish } = useContext<LangContextType | null>(LangContext)!;
-
     const currentLanguage = getLanguage(isSpanish);
 
+    /**** MODAL ****/
     const [activeModal, setActiveModal] = useState(false);
-
     function handleModalToggle() {
-        setActiveModal(!activeModal)
+        setActiveModal(!activeModal);
     }
+    
+    /**** CAROUSEL ****/
+    // const [cards, setCards] = useState<React.ReactElement[]>([]);
+    // const [currentPage, setCurrentPage] = useState(0);
+    // const [slideDirection, setSlideDirection] = useState<"right" | "left" | undefined>("left");
+
+    // const cardsPerPage = 4;
 
     return (
         <main className="main">
 
-            <section className="upper-main">                
-                <section className="text-frame">
+            <section className="upper-main">             
 
-                    <article className="alert-title">
-                        <div className="icon-static"></div>
-                        <div className="icon-shadow"></div>
-                        <h2 className="alert-text">Open to work</h2>
+                <section className="main-card">
+
+                    <img src={frontPic} alt="profile_picture" />
+
+                    <article className="text-content">
+
+                        <div className="alert-title">
+                            <div className="icon-static"></div>
+                            <div className="icon-shadow"></div>
+                            <h2>Open to work</h2>
+                        </div>
+
+                        <p className="paragraph">I am an advanced Computer Programming student at UNSAM</p>
+
                     </article>
-
-                    <span>Estudiante avanzado UNSAM</span><br/>
-                    <span>Hybrid</span><br/>
-                    <span>martinmdl42@gmail.com</span><br/>
-                    <span>Español nativo, ingles avanzado</span>
-
+                    
                 </section>
+
             </section>
 
             <section className="lower-main">
                 <section className="projects-frame">
-                    <section className="arrows-frame">
+                    <section className="carousel-frame">
 
                         <button className="arrow">{"<"}</button>
 

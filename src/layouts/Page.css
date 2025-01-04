@@ -15,16 +15,6 @@
     /* background-color: #788151; */
 }
 
-.text-frame {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--bg2);
-    border-radius: 0.6rem;
-    backdrop-filter: blur(1px);
-}
-
 .lower-main {
     height: 60%;
     width: 80vw;
@@ -37,7 +27,7 @@
     width: 100%;
 }
 
-.arrows-frame {
+.carousel-frame {
     display: flex;
     justify-content: space-between;
     width: 100%;

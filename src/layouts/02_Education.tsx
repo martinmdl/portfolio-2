@@ -8,39 +8,36 @@ import './02_Education.css';
 
 export function Education() {
 
+    /**** LANGUAGE ****/
     const { isSpanish } = useContext<LangContextType | null>(LangContext)!;
-
     const currentLanguage = getLanguage(isSpanish);
 
+    /**** MODAL ****/
     const [activeModal, setActiveModal] = useState(false);
-
     function handleModalToggle() {
-        setActiveModal(!activeModal)
+        setActiveModal(!activeModal);
     }
 
     return (
         <main className="main">
 
             <section className="upper-main">                
-                <section className="text-frame">
+                <section className="section-text">
 
                     <article className="alert-title">
                         <div className="icon-static"></div>
                         <div className="icon-shadow"></div>
-                        <h2 className="alert-text">Open to work</h2>
+                        <h2>About to graduate</h2>
                     </article>
 
-                    <span>Estudiante avanzado UNSAM</span><br/>
-                    <span>Hybrid</span><br/>
-                    <span>martinmdl42@gmail.com</span><br/>
-                    <span>Español nativo, ingles avanzado</span>
+                    <p className="paragraph">I am an advanced Computer Programming student at UNSAM</p>
 
                 </section>
             </section>
 
             <section className="lower-main">
                 <section className="projects-frame">
-                    <section className="arrows-frame">
+                    <section className="carousel-frame">
 
                         <button className="arrow">{"<"}</button>
 
