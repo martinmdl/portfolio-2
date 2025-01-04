@@ -45,7 +45,7 @@ export function Education() {
 
                             {activeModal && <Modal onClose={handleModalToggle} />}
 
-                            {currentLanguage.workCards.map(item =>
+                            {currentLanguage.eduCards.map(item =>
                                 <button className="card-button" onClick={handleModalToggle}>
                                     <Card key={item.id} title={item.title} description={item.description} image={item.image} />
                                 </button>

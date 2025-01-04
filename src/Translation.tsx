@@ -2,6 +2,10 @@ import webScraper from "./assets/workCards/webScraper.png";
 import readappUser from "./assets/workCards/readappUser.png";
 import fileManager from "./assets/workCards/fileManager.png";
 
+import frontendUtn from "./assets/eduCards/course 1.png";
+import nodejsAdvance from "./assets/eduCards/course 2.png";
+import devFundamentals from "./assets/eduCards/course 3.png";
+
 const LANG_KEY = "language";
 const LANG_VALUE = "spanish";
 
@@ -54,6 +58,26 @@ const translator = {
                 image: fileManager,
             },
         ],
+        eduCards: [
+            {
+                id: 1,
+                title: "Frontend Developer",
+                description: "E-commerce development, Universidad Tecnológica Nacional.",
+                image: frontendUtn,
+            },
+            {
+                id: 2,
+                title: "Advanced NodeJS",
+                description: "Asynchronism and database interaction, LinkedIn Learning.",
+                image: nodejsAdvance,
+            },
+            {
+                id: 3,
+                title: "Professional Software Fundamentals",
+                description: "Software development life cycle, Microsoft and LinkedIn Learning.",
+                image: devFundamentals,
+            },
+        ],
         notFound: {
             title: "Error 404: Page not found",
             button: "Return to the site",
@@ -84,6 +108,26 @@ const translator = {
                 title: "Gestión de Bases de Datos",
                 description: "App para administrar eficientemente bases de datos locales.",
                 image: fileManager,
+            },
+        ],
+        eduCards: [
+            {
+                id: 1,
+                title: "Desarrollador Frontend",
+                description: "Desarrollo de e-commerce, Universidad Tecnológica Nacional.",
+                image: frontendUtn,
+            },
+            {
+                id: 2,
+                title: "NodeJS Avanzado",
+                description: "Asincronismo e interacción con bases de datos, LinkedIn Learning.",
+                image: nodejsAdvance,
+            },
+            {
+                id: 3,
+                title: "Fundamentos del Desarrollo",
+                description: "Ciclo de vida del desarrollo de sofware, Microsoft y LinkedIn Learning.",
+                image: devFundamentals,
             },
         ],
         notFound: {
