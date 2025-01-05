@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import { LangContext, LangContextType } from "../contexts/LangContext";
+
 import { getLanguage } from "../Translation";
 import { Card } from "../components/Card";
 import { Modal } from "../components/Modal";
@@ -39,7 +40,8 @@ export function Education() {
                 <section className="projects-frame">
                     <section className="carousel-frame">
 
-                        <button className="arrow">{"<"}</button>
+                        {/* <button className="arrow">{"<"}</button> */}
+                        <button className="arrow"></button>
 
                         <section className="cards-frame">
 
@@ -53,7 +55,8 @@ export function Education() {
 
                         </section>
 
-                        <button className="arrow">{">"}</button>
+                        {/* <button className="arrow">{">"}</button> */}
+                        <button className="arrow"></button>
 
                     </section>
                 </section>

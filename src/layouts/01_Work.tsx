@@ -63,15 +63,15 @@ export function Work() {
                         <div className="alert-container">
                             <div className="alert-icon"></div>
                             <div className="alert-shadow"></div>
-                            <h2 className="alert-title">Open to work</h2>
+                            <h2 className="alert-title">Open to work!</h2>
                         </div>
 
-                        <p className="paragraph"><MdEmail className="icon"/> Email: <b>martinmdl42@gmail.com</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">Copied!</span>}<br/></p>
-                        <p className="paragraph"><FaEarthAmericas className="icon"/> Languages: <b>Advanced English</b>, <b>Native Spanish</b><br/></p>
-                        <p className="paragraph"><IoBook className="icon"/> University: Advance Computer Programming student<b></b></p>
-                        <p className="paragraph"><BsClockFill className="icon"/> Availability: <b>Full Time</b> / <b>Part Time</b><br/></p>
-                        <p className="paragraph"><FaLocationDot className="icon"/> Location: <b>CABA</b>, <b>Argentina</b> (<b>GMT -3</b>)<br/></p>
-                        <p className="paragraph"><PiToolboxFill className="icon"/> Tech Stack: <b>Typescript</b> | <b>React</b> | <b>Node</b> | <b>SpringBoot</b> | <b>Kotlin</b></p>
+                        <p className="paragraph"><MdEmail className="icon"/> {currentLanguage.workText.email} <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">{currentLanguage.workText.emailCopy}</span>}</p>
+                        <p className="paragraph"><FaEarthAmericas className="icon"/> {currentLanguage.workText.languages}</p>
+                        <p className="paragraph"><IoBook className="icon"/> {currentLanguage.workText.university}</p>
+                        <p className="paragraph"><BsClockFill className="icon"/> {currentLanguage.workText.availability}</p>
+                        <p className="paragraph"><FaLocationDot className="icon"/> {currentLanguage.workText.location}</p>
+                        <p className="paragraph"><PiToolboxFill className="icon"/> {currentLanguage.workText.techStack}</p>
 
                     </article>
                     

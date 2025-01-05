@@ -38,6 +38,15 @@ const translator = {
             education: "Education",
             resume: "Resume",
         },
+        workText: {
+            email: "Email: martinmdl42@gmail.com",
+            emailCopy: "Copied!",
+            languages: "Languages: Advanced English, Native Spanish",
+            university: "University: Advance Computer Programming student",
+            availability: "Availability: Full Time / Part Time",
+            location: "Location: CABA, Argentina (GMT -3)",
+            techStack: "Tech Stack: Typescript | React | Node | SpringBoot | Kotlin",
+        },
         workCards: [
             {
                 id: 1,
@@ -79,7 +88,7 @@ const translator = {
             },
         ],
         notFound: {
-            title: "Error 404: Page not found",
+        title: "Error 404: Page not found",
             button: "Return to the site",
         }
     },
@@ -89,6 +98,15 @@ const translator = {
             work: "Trabajo",
             education: "Formación",
             resume: "Currículum",
+        },
+        workText: {
+            email: "Email: martinmdl42@gmail.com",
+            emailCopy: "Copiado!",
+            languages: "Idiomas: Inglés Avanzado, Español Nativo",
+            university: "Universidad: Avanzado de Programación Informática",
+            availability: "Disponibilidad: Full Time / Part Time",
+            location: "Ubicación: CABA, Argentina (GMT -3)",
+            techStack: "Tech Stack: Typescript | React | Node | SpringBoot | Kotlin",
         },
         workCards: [
             {

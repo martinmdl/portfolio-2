@@ -28,10 +28,6 @@
     font-size: 1.2rem;
 }
 
-.paragraph b:hover {
-    color: var(--textHover);
-}
-
 .icon {
     font-size: 1rem;
 }
