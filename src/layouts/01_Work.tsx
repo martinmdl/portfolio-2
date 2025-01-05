@@ -1,10 +1,9 @@
 import { useContext, useState } from "react";
 import { LangContext, LangContextType } from "../contexts/LangContext";
+import { Email } from "../components/Email";
 
-import { FaRegCopy } from "react-icons/fa";
 import { FaEarthAmericas } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
 import { PiToolboxFill } from "react-icons/pi";
 import { BsClockFill } from "react-icons/bs";
 import { IoBook } from "react-icons/io5";
@@ -36,19 +35,6 @@ export function Work() {
 
     // const cardsPerPage = 4;
 
-
-    /**** COPY TEXT ****/
-    const [showAlert, setShowAlert] = useState(false);    
-    async function handleCopy() {
-        try {
-            await navigator.clipboard.writeText("martinmdl42@gmail.com");
-            setShowAlert(true);
-            setTimeout(() => setShowAlert(false), 1000);
-        } catch (err) {
-            console.log("Failed to copy text:", err);
-        }
-    }
-
     return (
         <main className="main">
 
@@ -66,7 +52,8 @@ export function Work() {
                             <h2 className="alert-title">Open to work!</h2>
                         </div>
 
-                        <p className="paragraph"><MdEmail className="icon"/> <b>{currentLanguage.workText.email}</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">{currentLanguage.workText.emailCopy}</span>}</p>
+                        <Email emailCopy={currentLanguage.workText.emailCopy} centered={false} />
+
                         <p className="paragraph"><FaEarthAmericas className="icon"/> {currentLanguage.workText.languages}</p>
                         <p className="paragraph"><IoBook className="icon"/> {currentLanguage.workText.university}</p>
                         <p className="paragraph"><BsClockFill className="icon"/> {currentLanguage.workText.availability}</p>

@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
+import { Email } from "../components/Email";
 import { LangContext, LangContextType } from "../contexts/LangContext";
-import { MdEmail } from "react-icons/md";
-import { FaRegCopy } from "react-icons/fa";
 
 import { getLanguage } from "../Translation";
 import { Card } from "../components/Card";
@@ -29,18 +28,6 @@ export function Education() {
 
     // const cardsPerPage = 4;
 
-    /**** COPY TEXT ****/
-    const [showAlert, setShowAlert] = useState(false);    
-    async function handleCopy() {
-        try {
-            await navigator.clipboard.writeText("martinmdl42@gmail.com");
-            setShowAlert(true);
-            setTimeout(() => setShowAlert(false), 1000);
-        } catch (err) {
-            console.log("Failed to copy text:", err);
-        }
-    }
-
     return (
         <main className="main">
 
@@ -50,7 +37,7 @@ export function Education() {
 
                     <article className="text-container">
 
-                        <p className="paragraph ending"><MdEmail className="icon"/> <b>{currentLanguage.workText.email}</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">{currentLanguage.workText.emailCopy}</span>}</p>
+                        <Email emailCopy={currentLanguage.workText.emailCopy} centered={true} />
 
                         <p className="paragraph">{currentLanguage.eduText[0]} <b>{currentLanguage.eduText[1]}</b> {currentLanguage.eduText[2]} <b>{currentLanguage.eduText[3]}</b> {currentLanguage.eduText[4]} <b>{currentLanguage.eduText[5]}</b> {currentLanguage.eduText[6]} <b>{currentLanguage.eduText[7]}</b> {currentLanguage.eduText[8]} <b>{currentLanguage.eduText[9]}</b> {currentLanguage.eduText[10]}</p>
 

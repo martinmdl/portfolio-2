@@ -1,0 +1,33 @@
+.paragraph {
+    font-size: 1.2rem;
+}
+
+.paragraph b {
+    font-weight: bold;
+    color: var(--textHover);
+}
+
+.icon {
+    font-size: 1rem;
+}
+
+.copy-button {
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--text);
+}
+
+.copy-button:hover {
+    color: var(--textHover);
+}
+
+.copy-alert {
+    padding-left: 0.3rem;
+    position: absolute;
+    color: var(--active);
+}
+
+.ending {
+    padding-bottom: 0.5rem;
+    align-self: center;
+}

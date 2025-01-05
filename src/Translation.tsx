@@ -39,7 +39,6 @@ const translator = {
             resume: "Resume",
         },
         workText: {
-            email: "Email: martinmdl42@gmail.com",
             emailCopy: "Copied!",
             languages: "Advanced English, Native Spanish",
             university: "UNSAM Computer Programming student",
@@ -101,7 +100,6 @@ const translator = {
             resume: "Currículum",
         },
         workText: {
-            email: "Email: martinmdl42@gmail.com",
             emailCopy: "Copiado!",
             languages: "Inglés Avanzado, Español Nativo",
             university: "Estudiante de Programación Informática UNSAM",
