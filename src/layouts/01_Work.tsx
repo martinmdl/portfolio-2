@@ -1,11 +1,21 @@
 import { useContext, useState } from "react";
 import { LangContext, LangContextType } from "../contexts/LangContext";
+
+import { FaRegCopy } from "react-icons/fa";
+import { FaEarthAmericas } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { PiToolboxFill } from "react-icons/pi";
+import { BsClockFill } from "react-icons/bs";
+import { IoBook } from "react-icons/io5";
+
 import { getLanguage } from "../Translation";
 import { Card } from "../components/Card";
 import { Modal } from "../components/Modal";
+
 import './Page.css';
 import './01_Work.css';
-import frontPic from '../assets/frontPic.jpg'
+import frontPic from '../assets/frontPic.jpg';
 
 export function Work() {
 
@@ -26,6 +36,19 @@ export function Work() {
 
     // const cardsPerPage = 4;
 
+
+    /**** COPY TEXT ****/
+    const [showAlert, setShowAlert] = useState(false);    
+    async function handleCopy() {
+        try {
+            await navigator.clipboard.writeText("martinmdl42@gmail.com");
+            setShowAlert(true);
+            setTimeout(() => setShowAlert(false), 1000);
+        } catch (err) {
+            console.log("Failed to copy text:", err);
+        }
+    }
+
     return (
         <main className="main">
 
@@ -37,13 +60,21 @@ export function Work() {
 
                     <article className="text-content">
 
-                        <div className="alert-title">
-                            <div className="icon-static"></div>
-                            <div className="icon-shadow"></div>
-                            <h2>Open to work</h2>
+                        <div className="alert-container">
+                            <div className="alert-icon"></div>
+                            <div className="alert-shadow"></div>
+                            <h2 className="alert-title">Open to work</h2>
                         </div>
 
-                        <p className="paragraph">I am an advanced Computer Programming student at UNSAM</p>
+                        <p className="paragraph">
+
+                            <MdEmail className="icon"/> Email: <b>martinmdl42@gmail.com</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">Copied!</span>}<br/>
+                            <FaEarthAmericas className="icon"/> Languages: <b>Advanced English</b>, <b>Native Spanish</b><br/>
+                            <BsClockFill className="icon"/> Availability: <b>Full Time</b> / <b>Part Time</b><br/>
+                            <FaLocationDot className="icon"/> Location: <b>CABA</b>, <b>Argentina</b> (<b>GMT -3</b>)<br/>
+                            <PiToolboxFill className="icon"/> Tech Stack: <b>Typescript</b> | <b>React</b> | <b>Node</b> | <b>SpringBoot</b> | <b>Kotlin</b>
+                            <IoBook className="icon"/> Education: Advance Computer Programming student<b></b>
+                        </p>
 
                     </article>
                     
@@ -55,7 +86,8 @@ export function Work() {
                 <section className="projects-frame">
                     <section className="carousel-frame">
 
-                        <button className="arrow">{"<"}</button>
+                        {/* <button className="arrow">{"<"}</button> */}
+                        <button className="arrow"></button>
 
                         <section className="cards-frame">
 
@@ -69,7 +101,8 @@ export function Work() {
 
                         </section>
 
-                        <button className="arrow">{">"}</button>
+                        {/* <button className="arrow">{">"}</button> */}
+                        <button className="arrow"></button>
 
                     </section>
                 </section>

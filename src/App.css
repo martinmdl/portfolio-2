@@ -13,7 +13,7 @@
 body {
   /**** COLORS ****/
   --textHover: #ffffff;
-  --text: #ffffffcb;
+  --text: hsla(0, 0%, 100%, 0.8);
   --active: #e0ff32;
   --bg1: #161d26;
   --bg2: #333842;
