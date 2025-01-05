@@ -66,15 +66,12 @@ export function Work() {
                             <h2 className="alert-title">Open to work</h2>
                         </div>
 
-                        <p className="paragraph">
-
-                            <MdEmail className="icon"/> Email: <b>martinmdl42@gmail.com</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">Copied!</span>}<br/>
-                            <FaEarthAmericas className="icon"/> Languages: <b>Advanced English</b>, <b>Native Spanish</b><br/>
-                            <BsClockFill className="icon"/> Availability: <b>Full Time</b> / <b>Part Time</b><br/>
-                            <FaLocationDot className="icon"/> Location: <b>CABA</b>, <b>Argentina</b> (<b>GMT -3</b>)<br/>
-                            <PiToolboxFill className="icon"/> Tech Stack: <b>Typescript</b> | <b>React</b> | <b>Node</b> | <b>SpringBoot</b> | <b>Kotlin</b>
-                            <IoBook className="icon"/> Education: Advance Computer Programming student<b></b>
-                        </p>
+                        <p className="paragraph"><MdEmail className="icon"/> Email: <b>martinmdl42@gmail.com</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">Copied!</span>}<br/></p>
+                        <p className="paragraph"><FaEarthAmericas className="icon"/> Languages: <b>Advanced English</b>, <b>Native Spanish</b><br/></p>
+                        <p className="paragraph"><IoBook className="icon"/> University: Advance Computer Programming student<b></b></p>
+                        <p className="paragraph"><BsClockFill className="icon"/> Availability: <b>Full Time</b> / <b>Part Time</b><br/></p>
+                        <p className="paragraph"><FaLocationDot className="icon"/> Location: <b>CABA</b>, <b>Argentina</b> (<b>GMT -3</b>)<br/></p>
+                        <p className="paragraph"><PiToolboxFill className="icon"/> Tech Stack: <b>Typescript</b> | <b>React</b> | <b>Node</b> | <b>SpringBoot</b> | <b>Kotlin</b></p>
 
                     </article>
                     
