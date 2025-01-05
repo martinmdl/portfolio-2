@@ -46,19 +46,13 @@ export function Work() {
 
                     <article className="text-content">
 
-                        <div className="alert-container">
-                            <div className="alert-icon"></div>
-                            <div className="alert-shadow"></div>
-                            <h2 className="alert-title">Open to work!</h2>
-                        </div>
-
                         <Email emailCopy={currentLanguage.workText.emailCopy} centered={false} />
 
-                        <p className="paragraph"><FaEarthAmericas className="icon"/> {currentLanguage.workText.languages}</p>
-                        <p className="paragraph"><IoBook className="icon"/> {currentLanguage.workText.university}</p>
-                        <p className="paragraph"><BsClockFill className="icon"/> {currentLanguage.workText.availability}</p>
-                        <p className="paragraph"><FaLocationDot className="icon"/> {currentLanguage.workText.location}</p>
-                        <p className="paragraph"><PiToolboxFill className="icon"/> {currentLanguage.workText.techStack}</p>
+                        <p className="paragraph"><FaEarthAmericas className="icon"/>{currentLanguage.workText.languages}</p>
+                        <p className="paragraph"><IoBook className="icon"/>{currentLanguage.workText.university}</p>
+                        <p className="paragraph"><BsClockFill className="icon"/>{currentLanguage.workText.availability}</p>
+                        <p className="paragraph"><FaLocationDot className="icon"/>{currentLanguage.workText.location}</p>
+                        <p className="paragraph"><PiToolboxFill className="icon"/>{currentLanguage.workText.techStack}</p>
 
                     </article>
                     

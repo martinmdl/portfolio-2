@@ -86,6 +86,7 @@
 /**** COPY TEXT BUTTON ****/
 .icon {
     font-size: 1rem;
+    margin-right: 0.4rem;
 }
 
 .copy-button {
@@ -102,48 +103,4 @@
     padding-left: 0.3rem;
     position: absolute;
     color: var(--active);
-}
-
-/**** PULSING TITLE ****/
-.alert-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.alert-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.alert-icon, .alert-shadow {
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 50%;
-    background-color: var(--active);
-    border: none;
-}
-
-.alert-icon {
-    position: relative;
-    left: 0.25rem; /* half its size */
-}
-
-.alert-shadow {
-    position: relative;
-    left: -0.25rem; /* half its size */
-    animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(1, 1);
-    }
-    50% {
-        opacity: 0.4;
-    }
-    100% {
-        transform: scale(1.5);
-        opacity: 0;
-    }
 }

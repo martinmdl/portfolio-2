@@ -19,6 +19,6 @@ export function Email(props: { emailCopy: string, centered: boolean }) {
     }
     
     return (
-        <p className={`paragraph ${props.centered ? "ending" : ""}`}><MdEmail className="icon"/> Email: <b>martinmdl42@gmail.com</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">{props.emailCopy}</span>}</p>
+        <p className={`paragraph ${props.centered ? "ending" : ""}`}><MdEmail className="icon"/>Email: <b>martinmdl42@gmail.com</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">{props.emailCopy}</span>}</p>
     )
 }
