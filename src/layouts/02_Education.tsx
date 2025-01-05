@@ -52,7 +52,7 @@ export function Education() {
 
                         <p className="paragraph ending"><MdEmail className="icon"/> <b>{currentLanguage.workText.email}</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">{currentLanguage.workText.emailCopy}</span>}</p>
 
-                        <p className="paragraph">Próximo a recibirme de <b>Técnico Programador Informático</b> de la Universidad Nacional de San Martín (UNSAM) a fines de 2025. Mi formación me permite ingeniar soluciones <b>performantes</b>. Aunque tenga preferencia y más experiencia en el desarrollo <b>backend</b>, también me siento cómodo desarrollando <b>frontend</b>, ya que ultimamente adquirí amplios conocimientos de <b>React</b>. Por úlitmo, quiero agregar que me caracterizo por mi capacidad de <b>comunicación</b> y manejo del inglés.</p>
+                        <p className="paragraph">{currentLanguage.eduText[0]} <b>{currentLanguage.eduText[1]}</b> {currentLanguage.eduText[2]} <b>{currentLanguage.eduText[3]}</b> {currentLanguage.eduText[4]} <b>{currentLanguage.eduText[5]}</b> {currentLanguage.eduText[6]} <b>{currentLanguage.eduText[7]}</b> {currentLanguage.eduText[8]} <b>{currentLanguage.eduText[9]}</b> {currentLanguage.eduText[10]}</p>
 
                     </article>
                     
