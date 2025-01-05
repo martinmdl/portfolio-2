@@ -66,7 +66,7 @@ export function Work() {
                             <h2 className="alert-title">Open to work!</h2>
                         </div>
 
-                        <p className="paragraph"><MdEmail className="icon"/> {currentLanguage.workText.email} <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">{currentLanguage.workText.emailCopy}</span>}</p>
+                        <p className="paragraph"><MdEmail className="icon"/> <b>{currentLanguage.workText.email}</b> <FaRegCopy className="copy-button icon" onClick={handleCopy}/> {showAlert && <span className="copy-alert">{currentLanguage.workText.emailCopy}</span>}</p>
                         <p className="paragraph"><FaEarthAmericas className="icon"/> {currentLanguage.workText.languages}</p>
                         <p className="paragraph"><IoBook className="icon"/> {currentLanguage.workText.university}</p>
                         <p className="paragraph"><BsClockFill className="icon"/> {currentLanguage.workText.availability}</p>

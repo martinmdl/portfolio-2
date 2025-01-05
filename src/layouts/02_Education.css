@@ -1,0 +1,12 @@
+.text-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: left;
+    align-items: stretch;
+}
+
+.ending {
+    padding-bottom: 0.5rem;
+    align-self: center;
+}

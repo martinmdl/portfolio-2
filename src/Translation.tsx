@@ -41,11 +41,11 @@ const translator = {
         workText: {
             email: "Email: martinmdl42@gmail.com",
             emailCopy: "Copied!",
-            languages: "Languages: Advanced English, Native Spanish",
-            university: "University: Advance Computer Programming student",
-            availability: "Availability: Full Time / Part Time",
-            location: "Location: CABA, Argentina (GMT -3)",
-            techStack: "Tech Stack: Typescript | React | Node | SpringBoot | Kotlin",
+            languages: "Advanced English, Native Spanish",
+            university: "UNSAM Computer Programming student",
+            availability: "Full Time / Part Time",
+            location: "CABA, Argentina",
+            techStack: "Typescript | React | Node | SpringBoot | Kotlin",
         },
         workCards: [
             {
@@ -102,11 +102,11 @@ const translator = {
         workText: {
             email: "Email: martinmdl42@gmail.com",
             emailCopy: "Copiado!",
-            languages: "Idiomas: Inglés Avanzado, Español Nativo",
-            university: "Universidad: Avanzado de Programación Informática",
-            availability: "Disponibilidad: Full Time / Part Time",
-            location: "Ubicación: CABA, Argentina (GMT -3)",
-            techStack: "Tech Stack: Typescript | React | Node | SpringBoot | Kotlin",
+            languages: "Inglés Avanzado, Español Nativo",
+            university: "Estudiante de Programación Informática UNSAM",
+            availability: "Full Time / Part Time",
+            location: "CABA, Argentina",
+            techStack: "Typescript | React | Node | SpringBoot | Kotlin",
         },
         workCards: [
             {
