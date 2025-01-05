@@ -1,5 +1,5 @@
 .main-card img {
-    height: auto;
+    height: 100%;
     width: 30%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
