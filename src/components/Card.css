@@ -1,9 +1,9 @@
 .card-tilt {
     /* May be useful when going responsive*/
-    /* height: calc((100vh - 60px) / 2); */
-    /* width: 28%; */
-    height: 446.5px;
-    width: 376.3px;
+    height: calc((100vh - 60px) / 2);
+    width: calc((100vh - 60px) / 2 * 0.84);
+    /* height: 446.5px; */
+    /* width: 376.3px; */
 
     /* PARALLAX EFFECT CONTAINER */
     /* transform-style: preserve-3d; */
