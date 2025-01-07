@@ -48,11 +48,11 @@ export function Work() {
 
                         <Email emailCopy={currentLanguage.workText.emailCopy} centered={false} />
 
-                        <p className="paragraph"><FaEarthAmericas className="icon"/>{currentLanguage.workText.languages}</p>
+                        <p className="paragraph"><FaEarthAmericas className="icon"/><b>{currentLanguage.workText.languages[0]}</b> {currentLanguage.workText.languages[1]}</p>
                         <p className="paragraph"><IoBook className="icon"/>{currentLanguage.workText.university}</p>
                         <p className="paragraph"><BsClockFill className="icon"/>{currentLanguage.workText.availability}</p>
                         <p className="paragraph"><FaLocationDot className="icon"/>{currentLanguage.workText.location}</p>
-                        <p className="paragraph"><PiToolboxFill className="icon"/>{currentLanguage.workText.techStack}</p>
+                        <p className="paragraph"><PiToolboxFill className="icon"/><b>{currentLanguage.workText.techStack[1]}</b> {currentLanguage.workText.techStack[0]} <b>{currentLanguage.workText.techStack[2]}</b> {currentLanguage.workText.techStack[0]} {currentLanguage.workText.techStack[3]} {currentLanguage.workText.techStack[0]} {currentLanguage.workText.techStack[4]} {currentLanguage.workText.techStack[0]} {currentLanguage.workText.techStack[5]}</p>
 
                     </article>
                     

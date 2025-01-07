@@ -40,11 +40,11 @@ const translator = {
         },
         workText: {
             emailCopy: "Copied!",
-            languages: "Advanced English, Native Spanish",
+            languages: ["Advanced English,", "Native Spanish"],
             university: "UNSAM Computer Programming student",
             availability: "Full Time / Part Time",
             location: "CABA, Argentina",
-            techStack: "Typescript | React | Node | SpringBoot | Kotlin",
+            techStack: ["|", "TypeScript", "React", "Node", "SpringBoot", "Kotlin"],
         },
         workCards: [
             {
@@ -66,7 +66,7 @@ const translator = {
                 image: fileManager,
             },
         ],
-        eduText: ["About to graduate as a", "Computer Programming Technician", "from Universidad Nacional de San Martín (UNSAM) by the end of 2025. My education allows me to engineer", "performant", "solutions. Although I have a preference for and more experience in", "backend", "development, I also feel comfortable working on the", "frontend,", "as I have recently acquired extensive knowledge of React. Lastly, I would like to highlight my", "communication", "skills and proficiency in English."],
+        eduText: ["About to graduate as a", "Computer Programming Technician", "from Universidad Nacional de San Martín (UNSAM) by the end of 2025. My education and experience allow me to engineer", "Performant", "solutions. Although I have a preference for and more experience in", "Backend", "development, I also feel comfortable working on the", "Frontend,", "as I have recently acquired extensive knowledge of", "React", ". Lastly, I would like to highlight my", "Communication", "skills and proficiency in English."],
         eduCards: [
             {
                 id: 1,
@@ -101,11 +101,11 @@ const translator = {
         },
         workText: {
             emailCopy: "Copiado!",
-            languages: "Inglés Avanzado, Español Nativo",
+            languages: ["Inglés Avanzado,", "Español Nativo"],
             university: "Estudiante de Programación Informática UNSAM",
             availability: "Full Time / Part Time",
             location: "CABA, Argentina",
-            techStack: "Typescript | React | Node | SpringBoot | Kotlin",
+            techStack: ["|", "TypeScript", "React", "Node", "SpringBoot", "Kotlin"],
         },
         workCards: [
             {
@@ -127,7 +127,7 @@ const translator = {
                 image: fileManager,
             },
         ],
-        eduText: ["Próximo a recibirme de", "Técnico Programador Informático", "de la Universidad Nacional de San Martín (UNSAM) a fines de 2025. Mi formación me permite ingeniar soluciones", "performantes.", "Aunque tenga preferencia y más experiencia en el desarrollo", "backend,", "también me siento cómodo desarrollando", "frontend,", "ya que ultimamente adquirí amplios conocimientos de React. Por úlitmo, quiero agregar que me caracterizo por mi capacidad de", "comunicación", "y manejo del inglés."],
+        eduText: ["Próximo a recibirme de", "Técnico Programador Informático", "de la Universidad Nacional de San Martín (UNSAM) a fines de 2025. Mi formación y experiencia me permiten ingeniar soluciones", "Performantes.", "Aunque tenga preferencia y más experiencia en el desarrollo", "Backend,", "también me siento cómodo desarrollando", "Frontend,", "ya que ultimamente adquirí amplios conocimientos de", "React.", "Por úlitmo, quiero agregar que me caracterizo por mi capacidad de", "Comunicación", "y manejo del inglés."],
         eduCards: [
             {
                 id: 1,

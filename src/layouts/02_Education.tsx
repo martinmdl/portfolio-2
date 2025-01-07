@@ -39,7 +39,7 @@ export function Education() {
 
                         <Email emailCopy={currentLanguage.workText.emailCopy} centered={true} />
 
-                        <p className="paragraph">{currentLanguage.eduText[0]} <b>{currentLanguage.eduText[1]}</b> {currentLanguage.eduText[2]} <b>{currentLanguage.eduText[3]}</b> {currentLanguage.eduText[4]} <b>{currentLanguage.eduText[5]}</b> {currentLanguage.eduText[6]} <b>{currentLanguage.eduText[7]}</b> {currentLanguage.eduText[8]} <b>{currentLanguage.eduText[9]}</b> {currentLanguage.eduText[10]}</p>
+                        <p className="paragraph">{currentLanguage.eduText[0]} <b>{currentLanguage.eduText[1]}</b> {currentLanguage.eduText[2]} <b>{currentLanguage.eduText[3]}</b> {currentLanguage.eduText[4]} <b>{currentLanguage.eduText[5]}</b> {currentLanguage.eduText[6]} <b>{currentLanguage.eduText[7]}</b> {currentLanguage.eduText[8]} <b>{currentLanguage.eduText[9]}</b> {currentLanguage.eduText[10]} <b>{currentLanguage.eduText[11]}</b> {currentLanguage.eduText[12]} <b>{currentLanguage.eduText[13]}</b></p>
 
                     </article>
                     
