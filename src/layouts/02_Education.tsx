@@ -31,7 +31,9 @@ export function Education() {
     return (
         <main className="main">
 
-            <section className="upper-main">             
+            <section className="upper-main">
+
+                <h1 className="mobile-title">Martín De Lojo | Jr. Backend Dev</h1>         
 
                 <section className="main-card">
 
@@ -46,6 +48,8 @@ export function Education() {
                 </section>
 
             </section>
+
+            <h2 className="mobile-subtitle">Diplomas</h2>
 
             <section className="lower-main">
                 <section className="projects-frame">

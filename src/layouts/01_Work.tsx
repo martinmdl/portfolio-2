@@ -40,6 +40,8 @@ export function Work() {
 
             <section className="upper-main">             
 
+                <h1 className="mobile-title">Martín De Lojo | Jr. Backend Dev</h1>
+
                 <section className="main-card">
 
                     <img src={frontPic} alt="profile_picture" />
@@ -60,12 +62,14 @@ export function Work() {
 
             </section>
 
+            <h2 className="mobile-subtitle">Proyectos</h2>
+            
             <section className="lower-main">
                 <section className="projects-frame">
                     <section className="carousel-frame">
 
-                        {/* <button className="arrow">{"<"}</button> */}
-                        <button className="arrow"></button>
+                        <button className="arrow">{"<"}</button>
+                        {/* <button className="arrow"></button> */}
 
                         <section className="cards-frame">
 
@@ -79,8 +83,8 @@ export function Work() {
 
                         </section>
 
-                        {/* <button className="arrow">{">"}</button> */}
-                        <button className="arrow"></button>
+                        <button className="arrow">{">"}</button>
+                        {/* <button className="arrow"></button> */}
 
                     </section>
                 </section>
