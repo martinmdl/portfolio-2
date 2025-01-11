@@ -1,6 +1,6 @@
 import { ReactNode, useState } from "react";
 import { LangContext } from "./LangContext";
-import { isSpanishMode, toggleLanguage } from "../Translation";
+import { isSpanishMode, toggleLanguage } from "../utils/LangTranslator";
 
 export const LangProvider = ({ children } : {children: ReactNode} ) => {
 

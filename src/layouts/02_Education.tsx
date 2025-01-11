@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Email } from "../components/Email";
 import { LangContext, LangContextType } from "../contexts/LangContext";
 
-import { getLanguage } from "../Translation";
+import { getLanguage } from "../utils/LangTranslator";
 import { Card } from "../components/Card";
 import { Modal } from "../components/Modal";
 

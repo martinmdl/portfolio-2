@@ -1,6 +1,6 @@
 import { LangProvider } from './contexts/LangProvider';
 import { Navbar } from './components/Navbar';
-import { Router } from './Router';
+import { Router } from './utils/Router';
 import './App.css';
 
 export default function App() {

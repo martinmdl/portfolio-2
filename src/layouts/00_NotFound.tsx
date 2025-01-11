@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LangContext, LangContextType } from "../contexts/LangContext";
-import { getLanguage } from "../Translation";
+import { getLanguage } from "../utils/LangTranslator";
 import './00_NotFound.css';
 
 export function NotFound() {

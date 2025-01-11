@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import { Link, useMatch } from "react-router-dom";
 import { LangContext, LangContextType } from "../contexts/LangContext";
-import { getLanguage } from "../Translation";
-import { toggleTheme, isLightMode } from "../Theme";
+import { getLanguage } from "../utils/LangTranslator";
+import { toggleTheme, isLightMode } from "../utils/Theme";
 import './Navbar.css';
 
 export function Navbar() {

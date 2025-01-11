@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Work } from "./layouts/01_Work";
-import { Education } from "./layouts/02_Education";
-import { NotFound } from "./layouts/00_NotFound";
+import { Work } from "../layouts/01_Work";
+import { Education } from "../layouts/02_Education";
+import { NotFound } from "../layouts/00_NotFound";
 
 export function Router() {
     return (

@@ -8,7 +8,7 @@ import { PiToolboxFill } from "react-icons/pi";
 import { BsClockFill } from "react-icons/bs";
 import { IoBook } from "react-icons/io5";
 
-import { getLanguage } from "../Translation";
+import { getLanguage } from "../utils/LangTranslator";
 import { Card } from "../components/Card";
 import { Modal } from "../components/Modal";
 
@@ -33,7 +33,27 @@ export function Work() {
     // const [currentPage, setCurrentPage] = useState(0);
     // const [slideDirection, setSlideDirection] = useState<"right" | "left" | undefined>("left");
 
-    // const cardsPerPage = 4;
+
+    // useEffect(() => {
+    //     setCards(currentLanguage.workCards)
+    // })
+    
+    // const cardsPerPage = 3;
+
+    // const duplicateCards: React.ReactElement[] = Array.from(
+    //     { length: 10 },
+    //     item => <Card key={item.id} title={item.title} description={item.description} image={item.image} />
+    // )
+
+    // function handleNextPage() {
+    //     setSlideDirection("left");
+    //     setCurrentPage((prevPage) => prevPage + 1);
+    // }
+    
+    // function handlePrevPage() {
+    //     setSlideDirection("right");
+    //     setCurrentPage((prevPage) => prevPage - 1);
+    // }
 
     return (
         <main className="main">
