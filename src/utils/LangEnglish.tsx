@@ -1,10 +1,16 @@
-import webScraper from "../assets/workCards/webScraper.png";
-import readappUser from "../assets/workCards/readappUser.png";
-import fileManager from "../assets/workCards/fileManager.png";
+import amazon from "../assets/workCards/amazon.png";
+import readUser from "../assets/workCards/readUser.png";
+import files from "../assets/workCards/files.png";
+import moles from "../assets/workCards/moles.png";
+import univenture from "../assets/workCards/univenture.png";
 
 import frontendUtn from "../assets/eduCards/course 1.png";
 import nodejsAdvance from "../assets/eduCards/course 2.png";
 import devFundamentals from "../assets/eduCards/course 3.png";
+import machineLearning from "../assets/eduCards/course 4.png";
+import nodejsEssential from "../assets/eduCards/course 5.png";
+import devEssential from "../assets/eduCards/course 6.png";
+import devSkills from "../assets/eduCards/course 7.png";
 
 export const englishText = {
 
@@ -30,37 +36,31 @@ export const englishText = {
             id: 1,
             title: "Amazon Trends",
             description: "API for analizing trending products in Amazon.",
-            image: webScraper,
+            image: amazon,
         },
         {
             id: 2,
             title: "Reading Network",
             description: "Platform for sharing book reviews, connecting readers, tracking your progress and more!",
-            image: readappUser,
+            image: readUser,
         },
         {
             id: 3,
             title: "Database Management",
             description: "App for administrating efficiently your local databases.",
-            image: fileManager,
+            image: files,
         },
         {
             id: 4,
-            title: `Example 4`,
-            description: "This is just an example paragraph to test card display.",
-            image: fileManager,
+            title: `Whac-a-Mole`,
+            description: "add description",
+            image: moles,
         },
         {
             id: 5,
-            title: `Example 5`,
-            description: "This is just an example paragraph to test card display.",
-            image: fileManager,
-        },
-        {
-            id: 6,
-            title: `Example 6`,
-            description: "This is just an example paragraph to test card display.",
-            image: fileManager,
+            title: `Story Game`,
+            description: "add description",
+            image: univenture,
         },
     ],
     
@@ -89,9 +89,27 @@ export const englishText = {
         },
         {
             id: 4,
-            title: "Example 4",
-            description: "This is just an example paragraph to test card display.",
-            image: fileManager,
+            title: "Machine Learning",
+            description: "add description",
+            image: machineLearning,
+        },
+        {
+            id: 5,
+            title: "Beginner NodeJS",
+            description: "add description",
+            image: nodejsEssential,
+        },
+        {
+            id: 6,
+            title: "devEssential",
+            description: "add description",
+            image: devEssential,
+        },
+        {
+            id: 7,
+            title: "devSkills",
+            description: "add description",
+            image: devSkills,
         },
     ],
 
