@@ -7,6 +7,7 @@ import nodejsAdvance from "../assets/eduCards/course 2.png";
 import devFundamentals from "../assets/eduCards/course 3.png";
 
 export const englishText = {
+    
     navbar: {
         work: "Work",
         education: "Education",

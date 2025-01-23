@@ -67,7 +67,7 @@
     /* background-color: #ffa0e2; */
 }
 
-.arrow {
+.arrow, .invisible-arrow {
     all: unset;
     font-size: 3rem;
     font-weight: bold;
@@ -76,12 +76,13 @@
     /* background-color: #823a94; */
 }
 
-.arrow:hover {
-    color: var(--textHover);
+.invisible-arrow {
+    /* Unclickable element */
+    visibility: hidden;
 }
 
-.card-button {
-    all: unset;
+.arrow:hover {
+    color: var(--textHover);
 }
 
 /**** COPY TEXT BUTTON ****/

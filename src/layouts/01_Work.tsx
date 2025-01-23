@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LangContext, LangContextType } from "../contexts/LangContext";
 import { Email } from "../components/Email";
 
@@ -10,7 +10,6 @@ import { IoBook } from "react-icons/io5";
 
 import { getLanguage } from "../utils/LangTranslator";
 import { Card } from "../components/Card";
-import { Modal } from "../components/Modal";
 
 import './Page.css';
 import './01_Work.css';
@@ -22,38 +21,31 @@ export function Work() {
     const { isSpanish } = useContext<LangContextType | null>(LangContext)!;
     const currentLanguage = getLanguage(isSpanish);
 
-    /**** MODAL ****/
-    const [activeModal, setActiveModal] = useState(false);
-    function handleModalToggle() {
-        setActiveModal(!activeModal);
+    /**** CAROUSEL ****/
+    useEffect(() => {
+        setCards(currentLanguage.workCards.map(item => 
+            <Card key={item.id} title={item.title} description={item.description} image={item.image} />
+        ));
+    }, [currentLanguage]);
+
+    const [cards, setCards] = useState<JSX.Element[]>([]);
+    const [cardsPage, setCardsPage] = useState(0);
+
+    function showCards() {
+        return cards.slice(cardsPage, cardsPage + 3);
+    }
+
+    function handleNextPage() {
+        if(cardsPage + 1 <= cards.length - 3) {
+            setCardsPage((page) => page + 1);
+        }
     }
     
-    /**** CAROUSEL ****/
-    // const [cards, setCards] = useState<React.ReactElement[]>([]);
-    // const [currentPage, setCurrentPage] = useState(0);
-    // const [slideDirection, setSlideDirection] = useState<"right" | "left" | undefined>("left");
-
-
-    // useEffect(() => {
-    //     setCards(currentLanguage.workCards)
-    // })
-    
-    // const cardsPerPage = 3;
-
-    // const duplicateCards: React.ReactElement[] = Array.from(
-    //     { length: 10 },
-    //     item => <Card key={item.id} title={item.title} description={item.description} image={item.image} />
-    // )
-
-    // function handleNextPage() {
-    //     setSlideDirection("left");
-    //     setCurrentPage((prevPage) => prevPage + 1);
-    // }
-    
-    // function handlePrevPage() {
-    //     setSlideDirection("right");
-    //     setCurrentPage((prevPage) => prevPage - 1);
-    // }
+    function handlePrevPage() {
+        if(cardsPage - 1 >= 0) {
+            setCardsPage((page) => page - 1);
+        }
+    }
 
     return (
         <main className="main">
@@ -88,23 +80,14 @@ export function Work() {
                 <section className="projects-frame">
                     <section className="carousel-frame">
 
-                        <button className="arrow">{"<"}</button>
-                        {/* <button className="arrow"></button> */}
+                        {/* {cardsPage != 0? "arrow" : "invisible-arrow"} */}
+                        <button className="arrow" onClick={handlePrevPage}>{"<"}</button>
 
                         <section className="cards-frame">
-
-                            {activeModal && <Modal onClose={handleModalToggle} />}
-
-                            {currentLanguage.workCards.map(item =>
-                                <button className="card-button" onClick={handleModalToggle}>
-                                    <Card key={item.id} title={item.title} description={item.description} image={item.image} />
-                                </button>
-                            )}
-
+                            {showCards()}
                         </section>
 
-                        <button className="arrow">{">"}</button>
-                        {/* <button className="arrow"></button> */}
+                        <button className="arrow" onClick={handleNextPage}>{">"}</button>
 
                     </section>
                 </section>

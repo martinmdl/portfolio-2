@@ -1,10 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Email } from "../components/Email";
 import { LangContext, LangContextType } from "../contexts/LangContext";
 
 import { getLanguage } from "../utils/LangTranslator";
 import { Card } from "../components/Card";
-import { Modal } from "../components/Modal";
 
 import './Page.css';
 import './02_Education.css';
@@ -14,19 +13,6 @@ export function Education() {
     /**** LANGUAGE ****/
     const { isSpanish } = useContext<LangContextType | null>(LangContext)!;
     const currentLanguage = getLanguage(isSpanish);
-
-    /**** MODAL ****/
-    const [activeModal, setActiveModal] = useState(false);
-    function handleModalToggle() {
-        setActiveModal(!activeModal);
-    }
-    
-    /**** CAROUSEL ****/
-    // const [cards, setCards] = useState<React.ReactElement[]>([]);
-    // const [currentPage, setCurrentPage] = useState(0);
-    // const [slideDirection, setSlideDirection] = useState<"right" | "left" | undefined>("left");
-
-    // const cardsPerPage = 4;
 
     return (
         <main className="main">
@@ -59,15 +45,9 @@ export function Education() {
                         <button className="arrow"></button>
 
                         <section className="cards-frame">
-
-                            {activeModal && <Modal onClose={handleModalToggle} />}
-
                             {currentLanguage.eduCards.map(item =>
-                                <button className="card-button" onClick={handleModalToggle}>
                                     <Card key={item.id} title={item.title} description={item.description} image={item.image} />
-                                </button>
                             )}
-
                         </section>
 
                         {/* <button className="arrow">{">"}</button> */}
