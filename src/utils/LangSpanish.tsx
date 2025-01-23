@@ -87,6 +87,12 @@ export const spanishText = {
             description: "Ciclo de vida del desarrollo de sofware, Microsoft y LinkedIn Learning.",
             image: devFundamentals,
         },
+        {
+            id: 4,
+            title: "Example 4",
+            description: "This is just an example paragraph to test card display.",
+            image: fileManager,
+        },
     ],
 
     notFound: {

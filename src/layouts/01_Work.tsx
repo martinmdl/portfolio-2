@@ -29,21 +29,24 @@ export function Work() {
     }, [currentLanguage]);
 
     const [cards, setCards] = useState<JSX.Element[]>([]);
-    const [cardsPage, setCardsPage] = useState(0);
+    const [currentPage, setCurrentPage] = useState(0);
+
+    const cardsPerPage = 3;
+    const cardsJump = 1;
 
     function showCards() {
-        return cards.slice(cardsPage, cardsPage + 3);
+        return cards.slice(currentPage, currentPage + cardsPerPage);
     }
 
     function handleNextPage() {
-        if(cardsPage + 1 <= cards.length - 3) {
-            setCardsPage((page) => page + 1);
+        if(currentPage + cardsJump <= cards.length - cardsPerPage) {
+            setCurrentPage((page) => page + cardsJump);
         }
     }
     
     function handlePrevPage() {
-        if(cardsPage - 1 >= 0) {
-            setCardsPage((page) => page - 1);
+        if(currentPage - cardsJump >= 0) {
+            setCurrentPage((page) => page - cardsJump);
         }
     }
 
@@ -66,7 +69,7 @@ export function Work() {
                         <p className="paragraph"><IoBook className="icon"/>{currentLanguage.workText.university}</p>
                         <p className="paragraph"><BsClockFill className="icon"/>{currentLanguage.workText.availability}</p>
                         <p className="paragraph"><FaLocationDot className="icon"/>{currentLanguage.workText.location}</p>
-                        <p className="paragraph"><PiToolboxFill className="icon"/><b>{currentLanguage.workText.techStack[1]}</b> {currentLanguage.workText.techStack[0]} <b>{currentLanguage.workText.techStack[2]}</b> {currentLanguage.workText.techStack[0]} {currentLanguage.workText.techStack[3]} {currentLanguage.workText.techStack[0]} {currentLanguage.workText.techStack[4]} {currentLanguage.workText.techStack[0]} {currentLanguage.workText.techStack[5]}</p>
+                        <p className="paragraph"><PiToolboxFill className="icon"/><b>{currentLanguage.workText.techStack[1]}</b> {currentLanguage.workText.techStack[0]} <b>{currentLanguage.workText.techStack[2]}</b> {currentLanguage.workText.techStack[0]} {currentLanguage.workText.techStack[cardsPerPage]} {currentLanguage.workText.techStack[0]} {currentLanguage.workText.techStack[4]} {currentLanguage.workText.techStack[0]} {currentLanguage.workText.techStack[5]}</p>
 
                     </article>
                     
@@ -80,14 +83,13 @@ export function Work() {
                 <section className="projects-frame">
                     <section className="carousel-frame">
 
-                        {/* {cardsPage != 0? "arrow" : "invisible-arrow"} */}
-                        <button className="arrow" onClick={handlePrevPage}>{"<"}</button>
+                        <button className={currentPage == 0? "invisible-arrow" : "arrow"} onClick={handlePrevPage}>{"<"}</button>
 
                         <section className="cards-frame">
                             {showCards()}
                         </section>
 
-                        <button className="arrow" onClick={handleNextPage}>{">"}</button>
+                        <button className={currentPage == cards.length - cardsPerPage? "invisible-arrow" : "arrow"} onClick={handleNextPage}>{">"}</button>
 
                     </section>
                 </section>

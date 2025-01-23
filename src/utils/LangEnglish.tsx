@@ -7,7 +7,7 @@ import nodejsAdvance from "../assets/eduCards/course 2.png";
 import devFundamentals from "../assets/eduCards/course 3.png";
 
 export const englishText = {
-    
+
     navbar: {
         work: "Work",
         education: "Education",
@@ -86,6 +86,12 @@ export const englishText = {
             title: "Professional Software Fundamentals",
             description: "Software development life cycle, Microsoft and LinkedIn Learning.",
             image: devFundamentals,
+        },
+        {
+            id: 4,
+            title: "Example 4",
+            description: "This is just an example paragraph to test card display.",
+            image: fileManager,
         },
     ],
 

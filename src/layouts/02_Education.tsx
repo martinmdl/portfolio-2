@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Email } from "../components/Email";
 import { LangContext, LangContextType } from "../contexts/LangContext";
 
@@ -13,6 +13,35 @@ export function Education() {
     /**** LANGUAGE ****/
     const { isSpanish } = useContext<LangContextType | null>(LangContext)!;
     const currentLanguage = getLanguage(isSpanish);
+
+    /**** CAROUSEL ****/
+    useEffect(() => {
+        setCards(currentLanguage.eduCards.map(item => 
+            <Card key={item.id} title={item.title} description={item.description} image={item.image} />
+        ));
+    }, [currentLanguage]);
+
+    const [cards, setCards] = useState<JSX.Element[]>([]);
+    const [currentPage, setCurrentPage] = useState(0);
+
+    const cardsPerPage = 3;
+    const cardsJump = 1;
+
+    function showCards() {
+        return cards.slice(currentPage, currentPage + cardsPerPage);
+    }
+
+    function handleNextPage() {
+        if(currentPage + cardsJump <= cards.length - cardsPerPage) {
+            setCurrentPage((page) => page + cardsJump);
+        }
+    }
+    
+    function handlePrevPage() {
+        if(currentPage - cardsJump >= 0) {
+            setCurrentPage((page) => page - cardsJump);
+        }
+    }
 
     return (
         <main className="main">
@@ -41,17 +70,13 @@ export function Education() {
                 <section className="projects-frame">
                     <section className="carousel-frame">
 
-                        {/* <button className="arrow">{"<"}</button> */}
-                        <button className="arrow"></button>
+                    <button className={currentPage == 0? "invisible-arrow" : "arrow"} onClick={handlePrevPage}>{"<"}</button>
 
                         <section className="cards-frame">
-                            {currentLanguage.eduCards.map(item =>
-                                    <Card key={item.id} title={item.title} description={item.description} image={item.image} />
-                            )}
+                            {showCards()}
                         </section>
 
-                        {/* <button className="arrow">{">"}</button> */}
-                        <button className="arrow"></button>
+                        <button className={currentPage == cards.length - cardsPerPage? "invisible-arrow" : "arrow"} onClick={handleNextPage}>{">"}</button>
 
                     </section>
                 </section>
