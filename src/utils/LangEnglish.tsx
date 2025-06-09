@@ -59,7 +59,7 @@ export const englishText = {
         {
             id: 5,
             title: `Story Game`,
-            description: "Interactive game with multiple endings developed in Assembly.",
+            description: "Interactive game with multiple endings, developed in Assembly.",
             image: univenture,
         },
     ],
@@ -78,7 +78,7 @@ export const englishText = {
         {
             id: 2,
             title: "Advanced NodeJS",
-            description: "Asynchronism and database interaction, LinkedIn Learning.",
+            description: "Asynchronism and database management, LinkedIn Learning.",
             image: nodejsAdvance,
         },
         {
@@ -89,26 +89,26 @@ export const englishText = {
         },
         {
             id: 4,
-            title: "Machine Learning",
-            description: "add description",
+            title: "Machine Learning Fundamentals",
+            description: "Popular algorithms such as Trees, clustering and linear regression, LinkedIn Learning.",
             image: machineLearning,
         },
         {
             id: 5,
             title: "Beginner NodeJS",
-            description: "add description",
+            description: "Routes, JSONs and file management, LinkedIn Learning.",
             image: nodejsEssential,
         },
         {
             id: 6,
-            title: "devEssential",
-            description: "add description",
+            title: "Programming Funtamentals",
+            description: "Career Essentials Certificate, Microsoft and LinkedIn Learning.",
             image: devEssential,
         },
         {
             id: 7,
-            title: "devSkills",
-            description: "add description",
+            title: "Professional Developer Skills",
+            description: "GSI Programming Foundations Certificate, Microsoft and LinkedIn Learning.",
             image: devSkills,
         },
     ],

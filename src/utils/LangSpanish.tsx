@@ -59,7 +59,7 @@ export const spanishText = {
         {
             id: 5,
             title: `Story Game`,
-            description: "Juego interactivo con múltiples desenlaces desarrollado en Assembly.",
+            description: "Juego interactivo con múltiples desenlaces, desarrollado en Assembly.",
             image: univenture,
         },
     ],
@@ -78,7 +78,7 @@ export const spanishText = {
         {
             id: 2,
             title: "NodeJS Avanzado",
-            description: "Asincronismo e interacción con bases de datos, LinkedIn Learning.",
+            description: "Asincronismo y manejo de bases de datos, LinkedIn Learning.",
             image: nodejsAdvance,
         },
         {
@@ -89,26 +89,26 @@ export const spanishText = {
         },
         {
             id: 4,
-            title: "Machine Learning",
-            description: "agregar descripción",
+            title: "Fundamentos del Machine Learning",
+            description: "Algoritmos populares como árboles, clusterización y regresión lineal, LinkedIn Learning.",
             image: machineLearning,
         },
         {
             id: 5,
-            title: "Beginner NodeJS",
-            description: "agregar descripción",
+            title: "NodeJS Introductorio",
+            description: "Rutas, JSONs y manejo de archivos, LinkedIn Learning.",
             image: nodejsEssential,
         },
         {
             id: 6,
-            title: "devEssential",
-            description: "agregar descripción",
+            title: "Funtamentos de la Programación",
+            description: "Certificación Career Essentials, Microsoft y LinkedIn Learning.",
             image: devEssential,
         },
         {
             id: 7,
-            title: "devSkills",
-            description: "agregar descripción",
+            title: "Habilidades Profesionales de Desarrollo",
+            description: "Certificación GSI Programming Foundations, Microsoft y LinkedIn Learning.",
             image: devSkills,
         },
     ],
