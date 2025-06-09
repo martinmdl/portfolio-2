@@ -28,7 +28,7 @@ export const spanishText = {
         university: "Estudiante de Programación Informática UNSAM",
         availability: "Full Time / Part Time",
         location: "CABA, Argentina",
-        techStack: ["|", "TypeScript", "React", "Node", "SpringBoot", "Kotlin"],
+        techStack: ["|", "TypeScript", "React", "Spring", "Kotlin", "Node"],
     },
 
     workCards: [
@@ -66,7 +66,7 @@ export const spanishText = {
 
     /**** EDUCATION TAB ****/
 
-    eduText: ["Próximo a recibirme de", "Técnico Programador Informático", "de la Universidad Nacional de San Martín (UNSAM) a fines de 2025. Mi formación y experiencia me permiten ingeniar soluciones", "Performantes.", "Aunque tenga preferencia y más experiencia en el desarrollo", "Frontend,", "también me siento cómodo desarrollando", "Backend,", "ya que ultimamente adquirí amplios conocimientos de", "React.", "Por úlitmo, quiero agregar que me caracterizo por mi capacidad de", "Comunicación", "y manejo del inglés."],
+    eduText: ["Próximo a recibirme de", "Técnico Programador Informático", "de la Universidad Nacional de San Martín (UNSAM) a fines de 2025. Mi formación y experiencia me permiten ingeniar soluciones", "Performantes.", "Aunque tenga preferencia y más experiencia en el desarrollo", "Frontend,", "también me siento cómodo desarrollando", "Backend,", "ya que ultimamente adquirí amplios conocimientos de", "SpringBoot.", "Por úlitmo, quiero agregar que me caracterizo por mi capacidad de", "Comunicación", "y manejo del inglés."],
     
     eduCards: [
         {
