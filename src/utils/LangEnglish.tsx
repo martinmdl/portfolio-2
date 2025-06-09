@@ -66,7 +66,7 @@ export const englishText = {
     
     /**** EDUCATION TAB ****/
 
-    eduText: ["About to graduate as a", "Computer Programming Technician", "from Universidad Nacional de San Martín (UNSAM) by the end of 2025. My education and experience allow me to engineer", "Performant", "solutions. Although I have a preference for and more experience in", "Backend", "development, I also feel comfortable working on the", "Frontend,", "as I have recently acquired extensive knowledge of", "React", ". Lastly, I would like to highlight my", "Communication", "skills and proficiency in English."],
+    eduText: ["About to graduate as a", "Computer Programming Technician", "from Universidad Nacional de San Martín (UNSAM) by the end of 2025. My education and experience allow me to engineer", "Performant", "solutions. Although I have a preference for and more experience in", "Frontend", "development, I also feel comfortable working on the", "Backend,", "as I have recently acquired extensive knowledge of", "React", ". Lastly, I would like to highlight my", "Communication", "skills and proficiency in English."],
     
     eduCards: [
         {

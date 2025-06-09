@@ -48,7 +48,7 @@ export function Education() {
 
             <section className="upper-main">
 
-                <h1 className="mobile-title">Martín De Lojo | Jr. Backend Dev</h1>         
+                <h1 className="mobile-title">Martín De Lojo | Frontend Dev</h1>         
 
                 <section className="main-card">
 
