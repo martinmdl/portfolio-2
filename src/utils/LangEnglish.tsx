@@ -90,7 +90,7 @@ export const englishText = {
         {
             id: 4,
             title: "Machine Learning Fundamentals",
-            description: "Popular algorithms such as Trees, clustering and linear regression, LinkedIn Learning.",
+            description: "Popular algorithms such as trees, clustering and linear regression, LinkedIn Learning.",
             image: machineLearning,
         },
         {

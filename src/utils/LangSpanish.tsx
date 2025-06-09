@@ -107,7 +107,7 @@ export const spanishText = {
         },
         {
             id: 7,
-            title: "Habilidades Profesionales de Desarrollo",
+            title: "Habilidades de Desarrollo",
             description: "Certificación GSI Programming Foundations, Microsoft y LinkedIn Learning.",
             image: devSkills,
         },
