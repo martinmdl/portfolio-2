@@ -53,13 +53,13 @@ export const englishText = {
         {
             id: 4,
             title: `Whac-a-Mole`,
-            description: "add description",
+            description: "Popular arcade game of moles!",
             image: moles,
         },
         {
             id: 5,
             title: `Story Game`,
-            description: "add description",
+            description: "Interactive game with multiple endings developed in Assembly.",
             image: univenture,
         },
     ],

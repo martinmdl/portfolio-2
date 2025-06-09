@@ -53,13 +53,13 @@ export const spanishText = {
         {
             id: 4,
             title: `Whac-a-Mole`,
-            description: "agregar descripción",
+            description: "Popular juego arcade de topos!",
             image: moles,
         },
         {
             id: 5,
             title: `Story Game`,
-            description: "agregar descripción",
+            description: "Juego interactivo con múltiples desenlaces desarrollado en Assembly.",
             image: univenture,
         },
     ],
